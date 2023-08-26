@@ -12,7 +12,7 @@ class AdvanceController extends Controller
 
         $current_lesson = Lesson::where('course_id', $id)->first();
 
-        $lesson = Lesson::where('course_id', $id)
+        $lesson = Lesson::where('course_id', 3)
                         ->orderBy('sequence', 'asc')
                         ->get();
 
