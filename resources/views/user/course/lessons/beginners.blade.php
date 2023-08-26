@@ -129,13 +129,38 @@
                 <div class="course-dashboard-column">
                     <div class="lecture-viewer-container">
 
-                        <div class="lecture-video-item">
+                        {{-- <div class="lecture-video-item">
                             <video controls crossorigin playsinline id="player">
                                 <!-- Video files -->
                                 <source src="{!! $current_lesson->video_url !!}" type="video/mp4" />
 
                             </video>
-                        </div>
+                        </div> --}}
+
+
+
+
+
+
+
+                        <div style="padding:56.25% 0 0 0;position:relative;"><iframe
+                                src="https://player.vimeo.com/video/858212509?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                                frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+                                style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                                title="VIDEO 1 (INTRO)"></iframe></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                     </div><!-- end lecture-viewer-container -->
                     <div class="lecture-video-detail">
@@ -227,7 +252,7 @@
                                                 </div><!-- end collapse -->
                                             </div><!-- end card -->
 
-                                            
+
                                         </div><!-- end accordion-->
                                     </div><!-- end mobile-course-menu -->
                                 </div><!-- end tab-pane -->
@@ -349,6 +374,8 @@
     <!-- end scroll top -->
 
     <!-- template js files -->
+    <script src="https://player.vimeo.com/api/player.js"></script>
+
     <script src="{{ asset('user_asset/js/jquery-3.4.1.min.js') }}"></script>
     <script src="{{ asset('user_asset/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('user_asset/js/bootstrap-select.min.js') }}"></script>

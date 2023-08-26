@@ -16,7 +16,7 @@ return new class extends Migration
             $table->unsignedBigInteger('course_id');
             $table->string('title');
             $table->string('description');
-            $table->string('video_url');
+            $table->longText('video_url');
             $table->string('duration');
             $table->string('sequence');
             $table->timestamps();
