@@ -316,11 +316,15 @@
                                     <span class="icon h5 me-2"><i
                                             class="uil uil-check-circle align-middle"></i></span>Psychology
                                 </li>
+                                <li class="h6 text-muted mb-0">
+                                    <span class="icon h5 me-2"></span>
+                                </li>
                             </ul>
-
+                            
                             <div class="mt-4">
                                 <div class="d-grid">
-                                    <button class="btn btn-primary">Enroll</button>
+                                    <a class="btn btn-primary"
+                                        href="{{ route('checkout', ['price' => '500', 'mentorship' => 'One year mentorship']) }}">Enroll</a>
                                 </div>
                                 <p class="text-muted mt-3 mb-0">*No credit card required</p>
                             </div>
@@ -381,7 +385,8 @@
 
                             <div class="mt-4">
                                 <div class="d-grid">
-                                    <button class="btn btn-primary">Enroll</button>
+                                    <a class="btn btn-primary"
+                                        href="{{ route('checkout', ['price' => '1000', 'mentorship' => 'Life time mentorship']) }}">Enroll</a>
                                 </div>
                                 <p class="text-muted mt-3 mb-0">*No credit card required</p>
                             </div>

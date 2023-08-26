@@ -199,7 +199,7 @@
                                 <h5 class="footer-head">Quick links</h5>
                                 <ul class="list-unstyled footer-list mt-4">
                                     <li>
-                                        <a href="about.html" class="text-foot"><i
+                                        <a href="#" class="text-foot"><i
                                                 class="uil uil-angle-right-b me-1"></i> About us</a>
                                     </li>
                                     <li>
@@ -209,7 +209,7 @@
                                     </li>
 
                                     <li>
-                                        <a href="javascript:void(0)" class="text-foot"><i
+                                        <a href="{{route('user-login')}}" class="text-foot"><i
                                                 class="uil uil-angle-right-b me-1"></i> Login</a>
                                     </li>
                                 </ul>
@@ -220,12 +220,12 @@
                                 <h5 class="footer-head">Usefull Links</h5>
                                 <ul class="list-unstyled footer-list mt-4">
                                     <li>
-                                        <a href="javascript:void(0)" class="text-foot"><i
+                                        <a href="#" class="text-foot"><i
                                                 class="uil uil-angle-right-b me-1"></i> Terms of
                                             Services</a>
                                     </li>
                                     <li>
-                                        <a href="faq.html" class="text-foot"><i
+                                        <a href="{{route('faq')}}" class="text-foot"><i
                                                 class="uil uil-angle-right-b me-1"></i> FAQ</a>
                                     </li>
                                 </ul>
