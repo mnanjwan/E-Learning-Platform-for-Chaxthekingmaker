@@ -154,7 +154,7 @@
                 <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
                     <div class="card blog blog-primary rounded border-0 shadow overflow-hidden">
                         <div class="position-relative">
-                            <img src="{{ asset('website_asset/images/course/1.jpg') }}" class="card-img-top"
+                            <img src="{{ asset('website_asset/images/course/10.jpg') }}" class="card-img-top"
                                 alt="...">
                             <div class="overlay"></div>
 
@@ -184,7 +184,7 @@
                 <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
                     <div class="card blog blog-primary rounded border-0 shadow overflow-hidden">
                         <div class="position-relative">
-                            <img src="{{ asset('website_asset/images/course/2.jpg') }}" class="card-img-top"
+                            <img src="{{ asset('website_asset/images/course/20.jpg') }}" class="card-img-top"
                                 alt="...">
                             <div class="overlay"></div>
 
@@ -214,7 +214,7 @@
                 <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
                     <div class="card blog blog-primary rounded border-0 shadow overflow-hidden">
                         <div class="position-relative">
-                            <img src="{{ asset('website_asset/images/course/3.jpg') }}" class="card-img-top"
+                            <img src="{{ asset('website_asset/images/course/30.jpg') }}" class="card-img-top"
                                 alt="...">
                             <div class="overlay"></div>
 
