@@ -6,19 +6,27 @@ use App\Http\Controllers\Controller;
 use App\Models\Lesson;
 use Illuminate\Http\Request;
 
-class BeginnerController extends Controller
+class AdvanceController extends Controller
 {
     public function index($id) {
 
         $current_lesson = Lesson::where('course_id', $id)->first();
 
-                        $lesson = Lesson::where('course_id', $id)
+        $lesson = Lesson::where('course_id', $id)
                         ->orderBy('sequence', 'asc')
                         ->get();
 
-                        // dd($lesson);
+        if(!$current_lesson){
+            // return redirect()->back();
+            dd("No lesson found");
+        }
 
         
         return view('user.course.lessons.beginners', compact('lesson', 'current_lesson'));
+    }
+
+    public function lesson()
+    {
+        return view('user.course.lessons.index');
     }
 }

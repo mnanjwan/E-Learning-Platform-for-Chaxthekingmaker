@@ -121,14 +121,6 @@
 
 
     <!--======================================
-        START HEADER AREA
-    ======================================-->
-    <!-- end header-menu-area -->
-    <!--======================================
-            END HEADER AREA
-    ======================================-->
-
-    <!--======================================
         START COURSE-DASHBOARD
 ======================================-->
     <section class="course-dashboard">
@@ -235,6 +227,7 @@
                                                 </div><!-- end collapse -->
                                             </div><!-- end card -->
 
+                                            
                                         </div><!-- end accordion-->
                                     </div><!-- end mobile-course-menu -->
                                 </div><!-- end tab-pane -->
@@ -282,7 +275,12 @@
                         content</button>
                     <div class="course-dashboard-sidebar-wrap custom-scrollbar-styled">
                         <div class="course-dashboard-side-heading d-flex align-items-center justify-content-between">
-                            <h3 class="fs-18 font-weight-semi-bold">Beinners Course</h3>
+                            @php
+                                $course_name = App\Models\Course::where('id', $current_lesson->course_id)
+                                    ->get()
+                                    ->value('title');
+                            @endphp
+                            <h3 class="fs-18 font-weight-semi-bold">{{ $course_name }} Course</h3>
                             <button class="sidebar-close" type="button"><i class="la la-times"></i></button>
                         </div><!-- end course-dashboard-side-heading -->
                         <div class="course-dashboard-side-content">
@@ -294,7 +292,7 @@
                                             aria-controls="collapseOne">
                                             <i class="la la-angle-down"></i>
                                             <i class="la la-angle-up"></i>
-                                            <span class="fs-15"> Beinners Course</span>
+                                            <span class="fs-15"> {{ $course_name }} Course</span>
                                             <span class="course-duration">
                                                 <span>sum the total mins</span>
                                             </span>
@@ -307,15 +305,17 @@
 
                                                 @foreach ($lesson as $lesson)
                                                     <li class="course-item-link active">
-                                                       
+
                                                         <div class="course-item-content-wrap">
                                                             <div class="custom-control custom-checkbox">
                                                             </div><!-- end custom-control -->
                                                             <div class="course-item-content">
                                                                 <h4 class="fs-15">
-                                                                    <a href="{{route('beginner.lesson', ['id' => $lesson->id])}}"> 
-                                                                        {{ $lesson->sequence }}.{{ $lesson->title }}</h4>
-                                                                    </a>
+                                                                    <a
+                                                                        href="{{ route('beginner.lesson', ['id' => $lesson->id]) }}">
+                                                                        {{ $lesson->sequence }}.{{ $lesson->title }}
+                                                                </h4>
+                                                                </a>
                                                                 <div class="courser-item-meta-wrap">
                                                                     <p class="course-item-meta"><i
                                                                             class="la la-play-circle"></i>{{ $lesson->duration }}min

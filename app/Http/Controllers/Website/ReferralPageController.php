@@ -19,7 +19,7 @@ class ReferralPageController extends Controller
         $page_title = "Referral Chaxthekingmaker";
 
 
-        return view('website.pages.referral.mentorship_referral', compact('page_title'), ['id' => $id]);
+        return view('website.pages.referral.mentorship_referral', ['id' => $id], compact('page_title'));
     }
 
     public function register(Request $request, $price, $id) {
@@ -30,10 +30,10 @@ class ReferralPageController extends Controller
         if ($validator->fails()) {
             return redirect()->back();
         }
-
+        $page_title = "Checkout Chaxthekingmaker";
         $countries = Country::all();
 
-        return view('website.pages.referral.checkout_referral', ['id' => $id] , compact('price', 'countries'));
+        return view('website.pages.referral.checkout_referral', ['id' => $id] , compact('price', 'countries', 'page_title'));
     }
 
 

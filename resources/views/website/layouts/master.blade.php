@@ -92,12 +92,12 @@
                 <ul class="navigation-menu">
                     <li><a href="{{route('home')}}" class="sub-menu-item">Home</a></li>
                     <li>
-                        <a href="{{route('mentorship')}}" class="sub-menu-item">Mentorship & Signal</a>
+                        <a href="{{route('mentorship')}}" class="sub-menu-item">Mentorship </a>
                     </li>
                     <li>
                         <a href="{{route('course')}}" class="sub-menu-item">Courses</a>
                     </li>
-                    <li><a href="#" class="sub-menu-item">About Chax</a></li>
+                    <li><a href="#" class="sub-menu-item">Signal</a></li>
 
                     <li class="has-submenu parent-parent-menu-item">
                         <a href="javascript:void(0)">Find Us</a><span class="menu-arrow"></span>
@@ -157,7 +157,7 @@
     <!-- Navbar End -->
 
     @yield('content')
-
+<a href="https://api.whatsapp.com/send?phone=33605640851"></a>
     <!-- Footer Start -->
     <footer class="footer">
         <div class="container">

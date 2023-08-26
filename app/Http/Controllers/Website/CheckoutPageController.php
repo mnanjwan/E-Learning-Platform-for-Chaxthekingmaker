@@ -20,6 +20,7 @@ class CheckoutPageController extends Controller
         $validator = Validator::make(['value' => $price], [
             'value' => 'required|in:500,1000',
         ]);
+        
         if ($validator->fails()) {
             return redirect()->back();
         }

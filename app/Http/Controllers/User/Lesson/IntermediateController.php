@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Lesson;
 use Illuminate\Http\Request;
 
-class BeginnerController extends Controller
+class IntermediateController extends Controller
 {
     public function index($id) {
 

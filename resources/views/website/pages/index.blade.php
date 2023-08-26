@@ -154,7 +154,7 @@
                 <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
                     <div class="card blog blog-primary rounded border-0 shadow overflow-hidden">
                         <div class="position-relative">
-                            <img src="{{ asset('website_asset/images/course/3.png') }}" class="card-img-top"
+                            <img src="{{ asset('website_asset/images/course/1.jpg') }}" class="card-img-top"
                                 alt="...">
                             <div class="overlay"></div>
 
@@ -176,45 +176,7 @@
                                 journey into global currency trading</p>
                             <a href="{{ route('course') }}" class="text-primary">Read More <i
                                     class="uil uil-angle-right-b align-middle"></i></a>
-                            <ul class="list-unstyled d-flex justify-content-between border-top mt-3 pt-3 mb-0">
-                                <li class="text-muted small"><i class="uil uil-book-open text-info"></i> 10 Lectures</li>
-                                <li class="text-muted small ms-3"><i class="uil uil-clock text-warning"></i> 1h 30m</li>
-                                <!-- <l i class="text-muted small ms-3"><i class="uil uil-eye text-primary"></i> 3012</li> -->
-                            </ul>
-                        </div>
-                    </div> <!--end card / course-blog-->
-                </div><!--end col-->
-
-                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                    <div class="card blog blog-primary rounded border-0 shadow overflow-hidden">
-                        <div class="position-relative">
-                            <img src="{{ asset('website_asset/images/course/1.jpg') }}" class="card-img-top"
-                                alt="...">
-                            <div class="overlay"></div>
-
-
-                        </div>
-                        <div class="position-relative">
-                            <div class="shape overflow-hidden text-color-white">
-                                <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor">
-                                    </path>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="card-body content">
-                            <h6><a href="{{ route('course') }}" class="text-primary">Intermidiate</a></h6>
-                            <a href="{{ route('course') }}" class="title text-dark h5">Essentials in Forex trading</a>
-                            <p class="text-muted mt-2">Master Forex essentials: currency pairs, price movements, chart
-                                analysis. Develop strategies, understand risk management, and navigate the dynamic world of
-                                foreign exchange trading.</p>
-                            <a href="{{ route('course') }}" class="text-primary">Read More <i
-                                    class="uil uil-angle-right-b align-middle"></i></a>
-                            <ul class="list-unstyled d-flex justify-content-between border-top mt-3 pt-3 mb-0">
-                                <li class="text-muted small"><i class="uil uil-book-open text-info"></i> 10 Lectures</li>
-                                <li class="text-muted small ms-3"><i class="uil uil-clock text-warning"></i> 1h 30m</li>
-                                <!-- <l i class="text-muted small ms-3"><i class="uil uil-eye text-primary"></i> 3012</li> -->
-                            </ul>
+                           
                         </div>
                     </div> <!--end card / course-blog-->
                 </div><!--end col-->
@@ -237,6 +199,36 @@
                             </div>
                         </div>
                         <div class="card-body content">
+                            <h6><a href="{{ route('course') }}" class="text-primary">Intermidiate</a></h6>
+                            <a href="{{ route('course') }}" class="title text-dark h5">Essentials in Forex trading</a>
+                            <p class="text-muted mt-2">Master Forex essentials: currency pairs, price movements, chart
+                                analysis. Develop strategies, understand risk management, and navigate the dynamic world of
+                                foreign exchange trading.</p>
+                            <a href="{{ route('course') }}" class="text-primary">Read More <i
+                                    class="uil uil-angle-right-b align-middle"></i></a>
+                           
+                        </div>
+                    </div> <!--end card / course-blog-->
+                </div><!--end col-->
+
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                    <div class="card blog blog-primary rounded border-0 shadow overflow-hidden">
+                        <div class="position-relative">
+                            <img src="{{ asset('website_asset/images/course/3.jpg') }}" class="card-img-top"
+                                alt="...">
+                            <div class="overlay"></div>
+
+
+                        </div>
+                        <div class="position-relative">
+                            <div class="shape overflow-hidden text-color-white">
+                                <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="card-body content">
                             <h6><a href="{{route('course')}}" class="text-primary">Advance</a></h6>
                             <a href="{{route('course')}}" class="title text-dark h5">Ultimate Key to Forex trading</a>
                             <p class="text-muted mt-2">Unlock Forex success: master technical analysis, chart patterns,
@@ -244,11 +236,7 @@
                                 profitable currency trading.</p>
                             <a href="{{route('course')}}" class="text-primary">Read More <i
                                     class="uil uil-angle-right-b align-middle"></i></a>
-                            <ul class="list-unstyled d-flex justify-content-between border-top mt-3 pt-3 mb-0">
-                                <li class="text-muted small"><i class="uil uil-book-open text-info"></i> 10 Lectures</li>
-                                <li class="text-muted small ms-3"><i class="uil uil-clock text-warning"></i> 1h 30m</li>
-                                <!-- <l i class="text-muted small ms-3"><i class="uil uil-eye text-primary"></i> 3012</li> -->
-                            </ul>
+                           
                         </div>
                     </div> <!--end card / course-blog-->
                 </div><!--end col-->

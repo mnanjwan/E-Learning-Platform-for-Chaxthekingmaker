@@ -41,6 +41,12 @@ Route::prefix('user')->group(function () {
     #course
     Route::get('/courses', 'User\Course\CourseController@index')->name('courses');
     Route::get('/lesson/beginner/{id}', 'User\Lesson\BeginnerController@index')->name('beginner.lesson');
+    Route::get('/lesson/intermediate/{id}', 'User\Lesson\IntermediateController@index')->name('intermediate.lesson');
+    Route::get('/lesson/advance/{id}', 'User\Lesson\AdvanceController@index')->name('advance.lesson');
+
+    Route::get('/lesson/lesson', 'User\Lesson\AdvanceController@lesson')->name('lesson');
+
+
     #withdrawl
     Route::get('/withdraw', 'User\Withdraw\WithdrawController@index')->name('user.withdraw');
     Route::post('/withdraw/process', 'User\Withdraw\WithdrawController@process')->name('user.withdraw.process');
