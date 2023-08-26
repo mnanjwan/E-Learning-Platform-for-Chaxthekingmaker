@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="{{$page_description ??  " Chax the King Maker"}}" />
     <meta name="keywords" content="Chax, Forex, The King Maker, Money" />
+    <meta property="og:image" content="https://chaxthekingmaker.com/website_asset/images/logo-dark.png" />
     <meta name="author" content="" />
     <meta name="email" content="" />
     <meta name="website" content="/" />
