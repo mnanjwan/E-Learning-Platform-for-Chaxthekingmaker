@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <title>{{$page_title}}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="The King Makers Home Page" />
+    <meta name="description" content="{{$page_description ??  " Chax the King Maker"}}" />
     <meta name="keywords" content="Chax, Forex, The King Maker, Money" />
     <meta name="author" content="" />
     <meta name="email" content="" />
