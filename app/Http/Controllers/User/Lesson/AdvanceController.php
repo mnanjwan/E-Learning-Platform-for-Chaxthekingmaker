@@ -10,7 +10,8 @@ class AdvanceController extends Controller
 {
     public function index($id) {
 
-        $current_lesson = Lesson::where('course_id', $id)->first();
+        $current_lesson = Lesson::where('id', $id)
+                                ->where('course_id', 3)->first();
 
         $lesson = Lesson::where('course_id', 3)
                         ->orderBy('sequence', 'asc')
