@@ -171,7 +171,7 @@
                         <div class="card-body content">
                             <h6><a href="{{ route('course') }}" class="text-primary">Beginners</a></h6>
                             <a href="{{ route('course') }}" class="title text-dark h5">Introduction to Forex trading</a>
-                            <p class="text-muted mt-2">TExplore Forex trading basics: currency pairs, exchange rates,
+                            <p class="text-muted mt-2">Explore Forex trading basics: currency pairs, exchange rates,
                                 market hours. Learn strategies, risk management, and factors influencing markets. Start your
                                 journey into global currency trading</p>
                             <a href="{{ route('course') }}" class="text-primary">Read More <i
@@ -205,7 +205,7 @@
                         <div class="card-body content">
                             <h6><a href="{{ route('course') }}" class="text-primary">Intermidiate</a></h6>
                             <a href="{{ route('course') }}" class="title text-dark h5">Essentials in Forex trading</a>
-                            <p class="text-muted mt-2">"Master Forex essentials: currency pairs, price movements, chart
+                            <p class="text-muted mt-2">Master Forex essentials: currency pairs, price movements, chart
                                 analysis. Develop strategies, understand risk management, and navigate the dynamic world of
                                 foreign exchange trading.</p>
                             <a href="{{ route('course') }}" class="text-primary">Read More <i

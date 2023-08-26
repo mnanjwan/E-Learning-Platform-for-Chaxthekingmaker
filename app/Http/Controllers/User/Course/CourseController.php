@@ -16,9 +16,5 @@ class CourseController extends Controller
         return view('user.course.courses');
     }
 
-    public function details() {
-
-        
-        return view('user.course.lesson_details');
-    }
+   
 }

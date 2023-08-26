@@ -70,7 +70,7 @@
                                         @error('duration')
                                             <div class="error text-danger">{{ $message }}</div>
                                         @enderror
-                                        <input class="form-control form--control pl-3" type="text" name="duration"
+                                        <input class="form-control form--control pl-3" type="numeric" name="duration"
                                             placeholder="e.g. 30mins or 1hr etc">
                                     </div>
                                 </div><!-- end col-lg-12 -->

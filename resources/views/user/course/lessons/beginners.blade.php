@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Lesson - {{$row->title}}</title>
+    {{-- <title>Lesson - {{$row->title}}</title> --}}
 
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com/">
@@ -77,7 +77,7 @@
                         </div>
                     </div><!-- end logo-box -->
                     <div class="course-dashboard-header-title pl-4">
-                        <a href="course-details.html" class="text-white fs-15">Introduction to Forex</a>
+                        <a href="course-details.html" class="text-white fs-15">{{ $current_lesson->title }}</a>
                     </div><!-- end course-dashboard-header-title -->
                     <div class="menu-wrapper ml-auto">
                         <div class="theme-picker d-flex align-items-center mr-3">
@@ -136,54 +136,18 @@
             <div class="course-dashboard-container d-flex">
                 <div class="course-dashboard-column">
                     <div class="lecture-viewer-container">
+
                         <div class="lecture-video-item">
                             <video controls crossorigin playsinline id="player">
                                 <!-- Video files -->
-                                <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4"
-                                    type="video/mp4" />
-                                <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4"
-                                    type="video/mp4" />
-                                <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4"
-                                    type="video/mp4" />
+                                <source src="{!! $current_lesson->video_url !!}" type="video/mp4" />
 
-                                <!-- Caption files -->
-                                <track kind="captions" label="English" srclang="en"
-                                    src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt"
-                                    default />
-                                <track kind="captions" label="Français" srclang="fr"
-                                    src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt" />
-
-                                <!-- Fallback for browsers that don't support the <video> element -->
-                                <a href="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4"
-                                    download>Download</a>
                             </video>
                         </div>
+
                     </div><!-- end lecture-viewer-container -->
                     <div class="lecture-video-detail">
-                        <div class="lecture-tab-body bg-gray p-4">
-                            <ul class="nav nav-tabs generic-tab" id="myTab" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link" id="search-tab" data-toggle="tab" href="#search"
-                                        role="tab" aria-controls="search" aria-selected="false">
-                                        <i class="la la-search"></i>
-                                    </a>
-                                </li>
-                                <li class="nav-item mobile-menu-nav-item">
-                                    <a class="nav-link" id="course-content-tab" data-toggle="tab"
-                                        href="#course-content" role="tab" aria-controls="course-content"
-                                        aria-selected="false">
-                                        Course Content
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active" id="overview-tab" data-toggle="tab" href="#overview"
-                                        role="tab" aria-controls="overview" aria-selected="true">
-                                        Overview
-                                    </a>
-                                </li>
 
-                            </ul>
-                        </div>
                         <div class="lecture-video-detail-body">
                             <div class="tab-content" id="myTabContent">
 
@@ -278,24 +242,25 @@
                                     aria-labelledby="overview-tab">
                                     <div class="lecture-overview-wrap">
                                         <div class="lecture-overview-item">
-                                            <h3 class="fs-24 font-weight-semi-bold pb-2">About this course</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dicta
-                                                eos iste maxime sapiente similique totam? Consequatur consequuntur
-                                                excepturi in, magni necessitatibus nemo quae repellendus</p>
+                                            <h3 class="fs-24 font-weight-semi-bold pb-2">About this Lesson</h3>
+                                            <p>{{ $current_lesson->description }}</p>
                                         </div><!-- end lecture-overview-item -->
                                         <div class="section-block"></div>
                                         <div class="section-block"></div>
                                         <div class="lecture-overview-item">
                                             <div class="lecture-overview-stats-wrap d-flex">
-                                                <div class="lecture-overview-stats-item">
+                                                {{-- <div class="lecture-overview-stats-item">
                                                     <h3 class="fs-16 font-weight-semi-bold pb-2">Description</h3>
-                                                </div><!-- end lecture-overview-stats-item -->
+                                                </div><!-- end lecture-overview-stats-item --> --}}
                                                 <div
                                                     class="lecture-overview-stats-item lecture-overview-stats-wide-item lecture-description">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
-                                                        ea esse inventore odit voluptate. Accusantium asperiores at
-                                                        doloremque ex impedit ipsa itaque. Consequuntur dignissim.</p>
-                                                 
+                                                    {{-- @php
+                                                        $referrer_firstname = App\Models\User::where('id', $row->user_id)
+                                                            ->get()
+                                                            ->value('firstname');
+                                                    @endphp
+                                                    <p>{{ $lesson }}.</p> --}}
+
                                                 </div><!-- end lecture-overview-stats-item -->
                                             </div><!-- end lecture-overview-stats-wrap -->
                                         </div><!-- end lecture-overview-item -->
@@ -317,7 +282,7 @@
                         content</button>
                     <div class="course-dashboard-sidebar-wrap custom-scrollbar-styled">
                         <div class="course-dashboard-side-heading d-flex align-items-center justify-content-between">
-                            <h3 class="fs-18 font-weight-semi-bold">Course content</h3>
+                            <h3 class="fs-18 font-weight-semi-bold">Beinners Course</h3>
                             <button class="sidebar-close" type="button"><i class="la la-times"></i></button>
                         </div><!-- end course-dashboard-side-heading -->
                         <div class="course-dashboard-side-content">
@@ -329,10 +294,9 @@
                                             aria-controls="collapseOne">
                                             <i class="la la-angle-down"></i>
                                             <i class="la la-angle-up"></i>
-                                            <span class="fs-15"> Section 1: Dive in and Discover After Effects</span>
+                                            <span class="fs-15"> Beinners Course</span>
                                             <span class="course-duration">
-                                                <span>1/5</span>
-                                                <span>21min</span>
+                                                <span>sum the total mins</span>
                                             </span>
                                         </button>
                                     </div><!-- end card-header -->
@@ -340,76 +304,29 @@
                                         data-parent="#accordionCourseExample">
                                         <div class="card-body p-0">
                                             <ul class="curriculum-sidebar-list">
-                                                <li class="course-item-link active">
-                                                    <div class="course-item-content-wrap">
-                                                        <div class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input"
-                                                                id="courseCheckbox" required>
-                                                            <label class="custom-control-label custom--control-label"
-                                                                for="courseCheckbox"></label>
-                                                        </div><!-- end custom-control -->
-                                                        <div class="course-item-content">
-                                                            <h4 class="fs-15">1. Let's Have Fun - Seriously!</h4>
-                                                            <div class="courser-item-meta-wrap">
-                                                                <p class="course-item-meta"><i
-                                                                        class="la la-play-circle"></i>2min</p>
-                                                            </div>
-                                                        </div><!-- end course-item-content -->
-                                                    </div><!-- end course-item-content-wrap -->
-                                                </li>
-                                                <li class="course-item-link">
-                                                    <div class="course-item-content-wrap">
-                                                        <div class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input"
-                                                                id="courseCheckbox2" required>
-                                                            <label class="custom-control-label custom--control-label"
-                                                                for="courseCheckbox2"></label>
-                                                        </div><!-- end custom-control -->
-                                                        <div class="course-item-content">
-                                                            <h4 class="fs-15">2. A simple concept to get ahead</h4>
-                                                            <div class="courser-item-meta-wrap">
-                                                                <p class="course-item-meta"><i
-                                                                        class="la la-play-circle"></i>2min</p>
-                                                            </div>
-                                                        </div><!-- end course-item-content -->
-                                                    </div><!-- end course-item-content-wrap -->
-                                                </li>
-                                                <li class="course-item-link active-resource">
-                                                    <div class="course-item-content-wrap">
-                                                        <div class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input"
-                                                                id="courseCheckbox3" required>
-                                                            <label class="custom-control-label custom--control-label"
-                                                                for="courseCheckbox3"></label>
-                                                        </div><!-- end custom-control -->
-                                                        <div class="course-item-content">
-                                                            <h4 class="fs-15">3. Download your Footage for your Quick
-                                                                Start</h4>
-                                                            <div class="courser-item-meta-wrap">
-                                                                <p class="course-item-meta"><i
-                                                                    class="la la-play-circle"></i>2min</p>
-                                                            </div>
-                                                        </div><!-- end course-item-content -->
-                                                    </div><!-- end course-item-content-wrap -->
-                                                </li>
-                                                <li class="course-item-link">
-                                                    <div class="course-item-content-wrap">
-                                                        <div class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input"
-                                                                id="courseCheckbox4" required>
-                                                            <label class="custom-control-label custom--control-label"
-                                                                for="courseCheckbox4"></label>
-                                                        </div><!-- end custom-control -->
-                                                        <div class="course-item-content">
-                                                            <h4 class="fs-15">4. Jump in and Animate your Character
-                                                            </h4>
-                                                            <div class="courser-item-meta-wrap">
-                                                                <p class="course-item-meta"><i
-                                                                        class="la la-play-circle"></i>2min</p>
-                                                            </div>
-                                                        </div><!-- end course-item-content -->
-                                                    </div><!-- end course-item-content-wrap -->
-                                                </li>
+
+                                                @foreach ($lesson as $lesson)
+                                                    <li class="course-item-link active">
+                                                       
+                                                        <div class="course-item-content-wrap">
+                                                            <div class="custom-control custom-checkbox">
+                                                            </div><!-- end custom-control -->
+                                                            <div class="course-item-content">
+                                                                <h4 class="fs-15">
+                                                                    <a href="{{route('beginner.lesson', ['id' => $lesson->id])}}"> 
+                                                                        {{ $lesson->sequence }}.{{ $lesson->title }}</h4>
+                                                                    </a>
+                                                                <div class="courser-item-meta-wrap">
+                                                                    <p class="course-item-meta"><i
+                                                                            class="la la-play-circle"></i>{{ $lesson->duration }}min
+                                                                    </p>
+                                                                </div>
+                                                            </div><!-- end course-item-content -->
+                                                        </div><!-- end course-item-content-wrap -->
+                                                    </li>
+                                                @endforeach
+
+
                                             </ul>
                                         </div><!-- end card-body -->
                                     </div><!-- end collapse -->

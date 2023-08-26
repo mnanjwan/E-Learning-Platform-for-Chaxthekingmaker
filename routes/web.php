@@ -37,8 +37,10 @@ Route::post('/login', 'User\Auth\LoginController@loginAction')->name('user-login
 Route::prefix('user')->group(function () {
     Route::get('/dashboard', 'User\Dashboard\DashboardController@index')->name('dashboard');
     Route::get('/profile', 'User\Profile\ProfileController@index')->name('profile');
+
+    #course
     Route::get('/courses', 'User\Course\CourseController@index')->name('courses');
-    Route::get('/course/details', 'User\Course\CourseController@details')->name('courses.details');
+    Route::get('/lesson/beginner/{id}', 'User\Lesson\BeginnerController@index')->name('beginner.lesson');
     #withdrawl
     Route::get('/withdraw', 'User\Withdraw\WithdrawController@index')->name('user.withdraw');
     Route::post('/withdraw/process', 'User\Withdraw\WithdrawController@process')->name('user.withdraw.process');

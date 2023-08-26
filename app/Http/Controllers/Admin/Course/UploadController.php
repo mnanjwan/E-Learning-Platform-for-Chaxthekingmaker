@@ -27,7 +27,7 @@ class UploadController extends Controller
             'title' => 'required|string',
             'course_id' => 'required|string',
             'description' => 'required|string',
-            'duration' => 'required|string',
+            'duration' => 'required|numeric',
             'video_url' => 'required|string',
             'sequence' => 'required|numeric'
         ]);

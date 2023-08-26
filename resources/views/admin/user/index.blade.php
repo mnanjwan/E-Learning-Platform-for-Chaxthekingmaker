@@ -23,6 +23,7 @@
                             <tr>
                                 <th scope="col">Name</th>
                                 <th scope="col">Email</th>
+                                <th scope="col">Phone</th>
                                 <th scope="col">Plan</th>
                                 <th scope="col">Date Joined</th>
                                 <th scope="col">Status</th>
@@ -40,6 +41,11 @@
                                     <th scope="row">
                                         <ul class="generic-list-item">
                                             <li>{{ $user->email }}</li>
+                                        </ul>
+                                    </th>
+                                    <th scope="row">
+                                        <ul class="generic-list-item">
+                                            <li>{{ $user->phone }}</li>
                                         </ul>
                                     </th>
                                     @foreach ($user->orders as $order)

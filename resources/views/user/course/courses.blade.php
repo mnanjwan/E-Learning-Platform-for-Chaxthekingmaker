@@ -73,8 +73,8 @@
                                         </a>
                                     </div><!-- end card-image -->
                                     <div class="card-body">
-                                        <h5 class="card-title"><a href="{{route('courses.details')}}">Beginners</a></h5>
-                                        <p class="card-text lh-22 pt-2"><a href="{{route('courses.details')}}"></a><span>Explore
+                                        <h5 class="card-title"><a href="{{route('beginner.lesson', ['id' => 1])}}">Beginners</a></h5>
+                                        <p class="card-text lh-22 pt-2"><a href="{{route('beginner.lesson', ['id' => 1])}}"></a><span>Explore
                                                 Forex basics, learn currency trading essentials, and gain market insights in
                                                 our beginner-friendly class. Start your trading journey today!</span></p>
                                     </div><!-- end card-body -->
@@ -111,8 +111,8 @@
                                         </a>
                                     </div><!-- end card-image -->
                                     <div class="card-body">
-                                        <h5 class="card-title"><a href="{{route('courses.details')}}">Intermediate</a></h5>
-                                        <p class="card-text lh-22 pt-2"><a href="{{route('courses.details')}}"></a><span>Enhance
+                                        <h5 class="card-title"><a href="#">Intermediate</a></h5>
+                                        <p class="card-text lh-22 pt-2"><a href="#"></a><span>Enhance
                                                 Forex skills, analyze charts, implement strategies, and deepen market
                                                 understanding in our interactive intermediate class. Elevate your trading
                                                 expertise now</span></p>
@@ -150,8 +150,8 @@
                                         </a>
                                     </div><!-- end card-image -->
                                     <div class="card-body">
-                                        <h5 class="card-title"><a href="{{route('courses.details')}}">advanced</a></h5>
-                                        <p class="card-text lh-22 pt-2"><a href="tea{{route('courses.details')}}cher-detail.html">Jose
+                                        <h5 class="card-title"><a href="#">advanced</a></h5>
+                                        <p class="card-text lh-22 pt-2"><a href="#">Jose
                                                 Portilla</a><span> Master advanced Forex techniques, refine trading
                                                 strategies, and navigate complex markets with expert guidance in our dynamic
                                                 advanced class</span></p>
@@ -165,7 +165,7 @@
                             <div class="col-lg-4 responsive-column-half">
                                 <div class="card card-item">
                                     <div class="card-image">
-                                        <a href="{{route('courses.details')}}" class="d-block">
+                                        <a href="{{route('beginner.lesson')}}" class="d-block">
                                             <img class="card-img-top" src="images/img9.jpg" alt="Card image cap">
                                             <div class="play-button">
                                                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px"
