@@ -8,6 +8,9 @@ use Illuminate\Http\Request;
 class FaqPageController extends Controller
 {
     public function index() {
-        return view('website.pages.faq');
+
+        $page_title = "Course Chaxthekingmaker";
+
+        return view('website.pages.faq', compact('page_title'));
     }
 }

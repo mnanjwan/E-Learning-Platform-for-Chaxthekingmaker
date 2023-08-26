@@ -8,6 +8,9 @@ use Illuminate\Http\Request;
 class ContactPageController extends Controller
 {
     public function index() {
-        return view('website.pages.contact');
+
+        $page_title = "Contact Chaxthekingmaker";
+
+        return view('website.pages.contact', compact('page_title'));
     }
 }

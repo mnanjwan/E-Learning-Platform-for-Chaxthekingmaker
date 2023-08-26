@@ -16,7 +16,10 @@ class ReferralPageController extends Controller
 {
     public function index($id) {
 
-        return view('website.pages.referral.mentorship_referral',['id' => $id]);
+        $page_title = "Referral Chaxthekingmaker";
+
+
+        return view('website.pages.referral.mentorship_referral', compact('page_title'), ['id' => $id]);
     }
 
     public function register(Request $request, $price, $id) {

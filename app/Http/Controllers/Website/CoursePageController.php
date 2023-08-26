@@ -8,7 +8,10 @@ use Illuminate\Http\Request;
 class CoursePageController extends Controller
 {
     public function index() {
-        return view('website.pages.course');
+
+        $page_title = "Course Chaxthekingmaker";
+        
+        return view('website.pages.course', compact('page_title'));
     }
 
 }

@@ -15,6 +15,7 @@ class CheckoutPageController extends Controller
 {
     public function index($price)
     {
+        $page_title = "Checkout Chaxthekingmaker";
 
         $validator = Validator::make(['value' => $price], [
             'value' => 'required|in:500,1000',
@@ -25,7 +26,7 @@ class CheckoutPageController extends Controller
 
         $countries = Country::all();
 
-        return view('website.pages.checkout', compact('price', 'countries'));
+        return view('website.pages.checkout', compact('price', 'countries', 'page_title'));
     }
 
 

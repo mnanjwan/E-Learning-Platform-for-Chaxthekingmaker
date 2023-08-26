@@ -8,7 +8,9 @@ use Illuminate\Http\Request;
 class MentorshipPageController extends Controller
 {
     public function index() {
+
+        $page_title = "Mentorship Chaxthekingmaker";
         
-        return view('website.pages.mentorship');
+        return view('website.pages.mentorship', compact('page_title'));
     }
 }

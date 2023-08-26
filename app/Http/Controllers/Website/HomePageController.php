@@ -9,7 +9,10 @@ use Illuminate\Http\Request;
 class HomePageController extends Controller
 {
     public function home() {
-        return view('website.pages.index');
+
+        $page_title = "Chax Thekingmaker";
+
+        return view('website.pages.index', compact('page_title'));
     }
 
 

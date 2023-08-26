@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Chax - The King Maker</title>
+    <title>{{$page_title}}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="The King Makers Home Page" />
     <meta name="keywords" content="Chax, Forex, The King Maker, Money" />
@@ -96,7 +96,7 @@
                     <li>
                         <a href="{{route('course')}}" class="sub-menu-item">Courses</a>
                     </li>
-                    <li><a href="about.html" class="sub-menu-item">About Chax</a></li>
+                    <li><a href="#" class="sub-menu-item">About Chax</a></li>
 
                     <li class="has-submenu parent-parent-menu-item">
                         <a href="javascript:void(0)">Find Us</a><span class="menu-arrow"></span>
