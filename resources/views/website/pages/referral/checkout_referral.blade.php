@@ -289,7 +289,7 @@
                         <h4 class="title mb-4">Have Question ? Get in touch!</h4>
                         <p class="text-muted para-desc mx-auto">
                             Reach out to our team
-                            <span class="text-primary fw-bold">Landrick</span> for more
+                            <span class="text-primary fw-bold"></span>Contact us for more
                             information and calrity on any of our packages.
                         </p>
                         <div class="mt-4 pt-2">

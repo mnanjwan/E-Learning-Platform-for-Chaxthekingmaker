@@ -1,19 +1,12 @@
-
-
 <!doctype html>
 <html lang="en" dir="ltr">
 
     
-<!-- Mirrored from shreethemes.in/landrick/landing/auth-cover-login.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 11 Aug 2023 11:01:17 GMT -->
 <head>
         <meta charset="utf-8">
-        <title>Landrick - Saas & Software Landing Page Template</title>
+        <title>Chax Student Login</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Premium Bootstrap 5 Landing Page Template">
-        <meta name="keywords" content="Saas, Software, multi-uses, HTML, Clean, Modern">
-        <meta name="author" content="Shreethemes">
-        <meta name="email" content="support@shreethemes.in">
-        <meta name="website" content="https://shreethemes.in/">
+        <meta name="description" content="Chax student Login ">
         <meta name="Version" content="v4.7.0">
 
         <!-- favicon -->

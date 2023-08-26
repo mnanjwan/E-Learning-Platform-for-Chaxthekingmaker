@@ -493,6 +493,5 @@
     <!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
 </body>
 
-<!-- Mirrored from shreethemes.in/landrick/landing/index-developer.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 11 Aug 2023 10:52:59 GMT -->
 
 </html>
