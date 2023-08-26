@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Aduca - Education HTML Template</title>
+    <title>Login - User Dashboard</title>
 
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com/">
@@ -65,8 +65,8 @@
                         <div class="card-body">
                             <h3 class="card-title text-center fs-24 lh-35 pb-4">Login to Your Account!</h3>
                             <div class="section-block"></div>
-                            <form action="{{route('user-login')}}" method="post" class="pt-4">
-@csrf
+                            <form action="{{ route('user-login') }}" method="post" class="pt-4">
+                                @csrf
                                 <div class="text-center pt-3 pb-4">
                                     <a href="{{ route('home') }}" class="logo"><img
                                             src="{{ asset('user_asset/images/logo.png') }}" alt="logo"

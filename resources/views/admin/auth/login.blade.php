@@ -1,18 +1,12 @@
 <!doctype html>
 <html lang="en" dir="ltr">
 
-
 <head>
     <meta charset="utf-8">
     <title>Chax Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Premium Bootstrap 5 Landing Page Template">
-    <meta name="keywords" content="Saas, Software, multi-uses, HTML, Clean, Modern">
-    <meta name="author" content="Shreethemes">
-    <meta name="email" content="support@shreethemes.in">
-    <meta name="website" content="https://shreethemes.in/">
+    <meta name="description" content="Admin Login Panel">
     <meta name="Version" content="v4.7.0">
-
 
     <!-- favicon -->
     <link rel="shortcut icon" href="{{ asset('website_asset/images/logo-icon.png') }}" />
@@ -56,14 +50,25 @@
             <div class="row">
                 <div class="col-12">
                     <div class="card form-signin p-4 rounded shadow">
-                        <form action="{{route('admin-login')}}" method="post">
+                        <form action="{{ route('admin-login') }}" method="post">
                             @csrf
                             <center>
                                 <a href="{{ route('home') }}"><img src="{{ asset('user_asset/images/logo.png') }}"
                                         width="50%" class="" alt=""></a>
                             </center> <br>
                             <h5 class="mb-3 text-center">Admin Login</h5>
+                            @if (session()->has('errors'))
+                                <div class="alert alert-danger">
 
+                                    {{ session()->get('errors')->first() }}
+                                </div>
+                            @endif
+                            @if (session()->has('success'))
+                                <div class="alert alert-success">
+
+                                    {{ session()->get('success') }}
+                                </div>
+                            @endif
                             <div class="form-floating mb-2">
                                 <input type="email" class="form-control" id="floatingInput" name="email"
                                     placeholder="name@example.com">

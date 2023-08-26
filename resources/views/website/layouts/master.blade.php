@@ -365,19 +365,6 @@
     </div> --}}
     <!-- Modal Content End -->
 
-    <!-- Cookies Start -->
-    <div class="card cookie-popup shadow rounded py-3 px-4">
-        <p class="text-muted mb-0">
-            This website uses cookies to provide you with a great user experience.
-            By using it, you accept our
-            <a href="" target="_blank" class="text-success h6">use of cookies</a>
-        </p>
-        <div class="cookie-popup-actions text-end">
-            <button><i class="uil uil-times text-dark fs-4"></i></button>
-        </div>
-    </div>
-    <!-- Cookies End -->
-
     <!-- Offcanvas Start -->
     <div class="offcanvas offcanvas-end shadow border-0" tabindex="-1" id="offcanvasRight"
         aria-labelledby="offcanvasRightLabel">
