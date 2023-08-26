@@ -279,7 +279,7 @@
                         <div class="card-body p-0">
                             <span class="py-2 px-4 d-inline-block bg-soft-primary h6 mb-0 text-primary rounded-lg">One
                                 Year</span>
-                            <h2 class="fw-bold mb-0 mt-3">$300.00</h2>
+                            <h2 class="fw-bold mb-0 mt-3">$500.00</h2>
                             <p class="text-muted"></p>
 
                             <p class="text-muted">
