@@ -144,8 +144,8 @@
                 <div class="col-12">
                     <div class="section-title text-center mb-4 pb-2">
                         <h4 class="title mb-4">Courses</h4>
-                        <p class="text-muted para-desc mb-0 mx-auto">Learn from the best course that teaches you the in and
-                            our of the forex market.</p>
+                        <h5 class="mb-0 fw-normal text-muted">Learn from the best course that teaches you the in and
+                            our of the forex market.</h5>
                     </div>
                 </div><!--end col-->
             </div><!--end row-->
@@ -484,10 +484,8 @@
                 <div class="col-12">
                     <div class="section-title text-center mb-4 pb-2">
                         <h4 class="title mb-4">Students Testimonies</h4>
-                        <p class="text-muted para-desc mx-auto mb-0">
-                            Empowered by knowledge, I transformed challenges into stepping
-                            stones on my journey of learning.
-                        </p>
+                        <h5 class="mb-0 fw-normal text-muted">Empowered by knowledge, I transformed challenges into stepping
+                            stones on my journey of learning.</h5>
                     </div>
                 </div>
                 <!--end col-->
