@@ -17,7 +17,7 @@
                             CHAX and I make kings.
                         </p>
                         <div class="mt-4 pt-2">
-                            <a href="mentorship.php" class="btn btn-primary me-2">Get Started</a>
+                            <a href="{{route('mentorship')}}" class="btn btn-primary me-2">Get Started</a>
                             <!-- <a href="javascript:void(0)" class="btn btn-outline-primary">Documentation</a> -->
                         </div>
                     </div>
