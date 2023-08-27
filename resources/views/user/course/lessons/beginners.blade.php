@@ -77,7 +77,7 @@
                         </div>
                     </div><!-- end logo-box -->
                     <div class="course-dashboard-header-title pl-4">
-                        <a href="course-details.html" class="text-white fs-15">{{ $current_lesson->title }}</a>
+                        <a href="" class="text-white fs-15">{{ $current_lesson->title }}</a>
                     </div><!-- end course-dashboard-header-title -->
                     <div class="menu-wrapper ml-auto">
                         <div class="theme-picker d-flex align-items-center mr-3">
@@ -129,7 +129,7 @@
                 <div class="course-dashboard-column">
                     <div class="lecture-viewer-container">
 
-                       
+
                         {!! $current_lesson->video_url !!}
 
                         {{-- <div style="padding:56.25% 0 0 0;position:relative;"><iframe
@@ -308,18 +308,33 @@
                                             <ul class="curriculum-sidebar-list">
 
                                                 @foreach ($lesson as $lesson)
-                                                    <li class="course-item-link active">
+                                                    <li class="course-item-link ">
 
                                                         <div class="course-item-content-wrap">
                                                             <div class="custom-control custom-checkbox">
                                                             </div><!-- end custom-control -->
                                                             <div class="course-item-content">
                                                                 <h4 class="fs-15">
-                                                                    <a
-                                                                        href="{{ route('beginner.lesson', ['id' => $lesson->id]) }}">
-                                                                        {{ $lesson->sequence }}.{{ $lesson->title }}
+                                                                    @if ($lesson->course_id == 3)
+                                                                        <a
+                                                                            href="{{ route('advance.lesson', ['id' => $lesson->id]) }}">
+                                                                            {{ $lesson->sequence }}.{{ $lesson->title }}
+                                                                        </a>
+                                                                    @elseif($lesson->course_id == 2)
+                                                                        <a
+                                                                            href="{{ route('advance.lesson', ['id' => $lesson->id]) }}">
+                                                                            {{ $lesson->sequence }}.{{ $lesson->title }}
+                                                                        </a>
+                                                                        @else
+                                                                        <a
+                                                                            href="{{ route('beginners.lesson', ['id' => $lesson->id]) }}">
+                                                                            {{ $lesson->sequence }}.{{ $lesson->title }}
+                                                                        </a>
+                                                                    @endif
+
+
                                                                 </h4>
-                                                                </a>
+
                                                                 <div class="courser-item-meta-wrap">
                                                                     <p class="course-item-meta"><i
                                                                             class="la la-play-circle"></i>{{ $lesson->duration }}min
@@ -374,6 +389,5 @@
     </script>
 </body>
 
-<!-- Mirrored from techydevs.com/demos/themes/html/aduca-demo/aduca/lesson-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Aug 2023 00:43:14 GMT -->
 
 </html>

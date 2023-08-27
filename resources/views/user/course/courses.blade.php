@@ -45,8 +45,8 @@
                             <div class="col-lg-4 responsive-column-half">
                                 <div class="card card-item">
                                     <div class="card-image">
-                                        <a href="lesson-details.html" class="d-block">
-                                            <img class="card-img-top" src="{{asset('user_asset/images/3.png')}}" alt="Card image cap">
+                                        <a href="#" class="d-block">
+                                            <img class="card-img-top" src="{{asset('website_asset/images/course/10.jpg')}}" alt="Card image cap">
                                             <div class="play-button">
                                                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px"
                                                     y="0px" viewBox="-307.4 338.8 91.8 91.8" xml:space="preserve">
@@ -73,8 +73,8 @@
                                         </a>
                                     </div><!-- end card-image -->
                                     <div class="card-body">
-                                        <h5 class="card-title"><a href="{{route('beginner.lesson', ['id' => 1])}}">Beginners</a></h5>
-                                        <p class="card-text lh-22 pt-2"><a href="{{route('beginner.lesson', ['id' => 1])}}"></a><span>Explore
+                                        <h5 class="card-title"><a href="{{route('advance.lesson', ['id' => 30])}}">Beginners</a></h5>
+                                        <p class="card-text lh-22 pt-2"><a href="{{route('advance.lesson', ['id' => 30])}}"></a><span>Explore
                                                 Forex basics, learn currency trading essentials, and gain market insights in
                                                 our beginner-friendly class. Start your trading journey today!</span></p>
                                     </div><!-- end card-body -->
@@ -83,8 +83,8 @@
                             <div class="col-lg-4 responsive-column-half">
                                 <div class="card card-item">
                                     <div class="card-image">
-                                        <a href="lesson-details.html" class="d-block">
-                                            <img class="card-img-top" src="{{asset('user_asset/images/1.jpg')}}" alt="Card image cap">
+                                        <a href="#" class="d-block">
+                                            <img class="card-img-top" src="{{asset('website_asset/images/course/20.jpg')}}" alt="Card image cap">
                                             <div class="play-button">
                                                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px"
                                                     y="0px" viewBox="-307.4 338.8 91.8 91.8" xml:space="preserve">
@@ -111,8 +111,8 @@
                                         </a>
                                     </div><!-- end card-image -->
                                     <div class="card-body">
-                                        <h5 class="card-title"><a href="{{route('beginner.lesson', ['id' => 2])}}">Intermediate</a></h5>
-                                        <p class="card-text lh-22 pt-2"><a href="{{route('beginner.lesson', ['id' => 2])}}"></a><span>Enhance
+                                        <h5 class="card-title"><a href="{{route('advance.lesson', ['id' => 30])}}">Intermediate</a></h5>
+                                        <p class="card-text lh-22 pt-2"><a href="{{route('advance.lesson', ['id' => 30])}}"></a><span>Enhance
                                                 Forex skills, analyze charts, implement strategies, and deepen market
                                                 understanding in our interactive intermediate class. Elevate your trading
                                                 expertise now</span></p>
@@ -122,8 +122,8 @@
                             <div class="col-lg-4 responsive-column-half">
                                 <div class="card card-item">
                                     <div class="card-image">
-                                        <a href="lesson-details.html" class="d-block">
-                                            <img class="card-img-top" src="{{asset('user_asset/images/2.jpg')}}" alt="Card image cap">
+                                        <a href="#" class="d-block">
+                                            <img class="card-img-top" src="{{asset('website_asset/images/course/30.jpg')}}" alt="Card image cap">
                                             <div class="play-button">
                                                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px"
                                                     y="0px" viewBox="-307.4 338.8 91.8 91.8" xml:space="preserve">
@@ -150,9 +150,8 @@
                                         </a>
                                     </div><!-- end card-image -->
                                     <div class="card-body">
-                                        <h5 class="card-title"><a href="{{route('beginner.lesson', ['id' => 3])}}">advanced</a></h5>
-                                        <p class="card-text lh-22 pt-2"><a href="{{route('beginner.lesson', ['id' => 3])}}">Jose
-                                                Portilla</a><span> Master advanced Forex techniques, refine trading
+                                        <h5 class="card-title"><a href="{{route('advance.lesson', ['id' => 30])}}">Advanced</a></h5>
+                                        <p class="card-text lh-22 pt-2"><a href="{{route('advance.lesson', ['id' => 30])}}"></a><span> Master advanced Forex techniques, refine trading
                                                 strategies, and navigate complex markets with expert guidance in our dynamic
                                                 advanced class</span></p>
                                     </div><!-- end card-body -->

@@ -86,13 +86,22 @@
                                 </ul>
                                 <p class="h6 text-muted mb-0">
                                     <span class="icon h5 "></span>After the transfer send the email you used to <br> signup
-                                    and your proof of payment to <a href="">billing@chax.com</a>
+                                    and your proof of payment to any social <li class="list-inline-item mx-2 mt-3"><a
+                                            href="https://wa.link/p5vyor" target="_blank"
+                                            class="btn btn-icon btn-pills btn-lg btn-success" data-bs-toggle="tooltip"
+                                            data-bs-placement="top" title="Whatsapp"><i class="mdi mdi-whatsapp"></i></a>
+                                    </li>
+                                    <li class="list-inline-item mx-2 mt-3"><a href="https://t.me/CHAXKM" target="_blank"
+                                            class="btn btn-icon btn-pills btn-lg btn-info" data-bs-toggle="tooltip"
+                                            data-bs-placement="top" title="Telegram"><i class="uil uil-telegram"></i></a>
+                                    </li>
                                 </p>
                                 <!--end form-->
                                 <hr>
+
                                 <h1 class="mb-0 card-title title-dark text-dark">
                                     Our Bank Details
-                                    <br><br>
+                                    <br>
                                     Chax The King Maker:
                                 </h1>
                                 <p class="h3 mb-0">

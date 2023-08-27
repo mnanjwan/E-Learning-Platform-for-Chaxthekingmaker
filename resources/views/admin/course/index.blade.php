@@ -20,7 +20,7 @@
                     <div class="card card-item card-item-list-layout">
                         <div class="card-image">
                             <a href="#" class="d-block">
-                                <img class="card-img-top" src="{{asset('user_asset/images/img11.jpg')}}" alt="Card image cap">
+                                <img class="card-img-top" src="{{$row->image_cover}}" alt="Card image cap">
                             </a>
                         </div><!-- end card-image -->
                         <div class="card-body">

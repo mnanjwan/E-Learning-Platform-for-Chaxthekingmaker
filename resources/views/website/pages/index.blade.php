@@ -128,7 +128,7 @@
                         </div>
 
                         <div class="mt-4 pt-2">
-                            <a href="#pricing" target="_blank" class="btn btn-primary m-1">Read More <i
+                            <a href="" target="_blank" class="btn btn-primary m-1">Read More <i
                                     class="uil uil-angle-right-b align-middle"></i></a>
                         </div>
                     </div>
@@ -250,10 +250,7 @@
                 <div class="col-12">
                     <div class="section-title text-center mb-4 pb-2">
                         <h4 class="title mb-4">Our Mentorship Plan</h4>
-                        <p class="para-desc mx-auto text-muted mb-0">
-                            <span class="text-primary fw-bold">Signup</span> on one of our
-                            mentorship plan as a gate way to your success in trading.
-                        </p>
+                        <h5 class="mb-0 fw-normal text-muted">Join <span class="text-success fw-bold"><span class="counter-value" data-target="325">1</span>+</span> students enrolled in <span class="fw-bold text-primary">The Kings Maker</span> Mentorship, to attain mastery in the Financial institue</h5>
                     </div>
                 </div>
                 <!--end col-->
@@ -381,13 +378,33 @@
                         </div>
                     </div>
                 </div>
-
-
                 <!--end col-->
             </div>
             <!--end row-->
         </div>
         <!--end container-->
+
+        <div class="container mt-md-5">
+            <div class="row justify-content-center" id="counter">
+                <div class="col-lg-8 col-md-10">
+                    <div class="mb-4 pb-2 text-center">
+                        <h5 class="mb-0 fw-normal text-muted"></span> Connect with <span class="fw-bold text-primary">CHAX THE KING MAKER</span> </h5>
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
+
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8 pb-md-4">
+                    <ul class="text-center mb-0 p-0">
+                        <li class="list-inline-item mx-2 mt-3"><a href="https://instagram.com/chaxbtbg?igshid=MjEwN2IyYWYwYw==" target="_blank" class="btn btn-icon btn-pills btn-lg btn-danger" data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram"><i data-feather="instagram" class="icons"></i></a></li>
+                        <li class="list-inline-item mx-2 mt-3"><a href="https://twitter.com/chaxbtbg?s=20" target="_blank" class="btn btn-icon btn-pills btn-lg btn-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter"><i data-feather="twitter" class="icons"></i></a></li>
+                        <li class="list-inline-item mx-2 mt-3"><a href="https://youtube.com/@CHAXBTBG?si=JOIb5b5Ftj8CZd_4" target="_blank" class="btn btn-icon btn-pills btn-lg btn-danger" data-bs-toggle="tooltip" data-bs-placement="top" title="Youtube"><i data-feather="youtube" class="icons"></i></a></li>
+                        <li class="list-inline-item mx-2 mt-3"><a href="https://wa.link/p5vyor" target="_blank" class="btn btn-icon btn-pills btn-lg btn-success" data-bs-toggle="tooltip" data-bs-placement="top" title="Whatsapp"><i class="mdi mdi-whatsapp"></i></a></li>
+                        <li class="list-inline-item mx-2 mt-3"><a href="https://t.me/CHAXKM" target="_blank" class="btn btn-icon btn-pills btn-lg btn-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram"><i class="uil uil-telegram"></i></a></li>
+                    </ul>
+                </div><!--end col-->
+            </div><!--end row-->
+        </div><!--end container-->
 
         <div class="container mt-100 mt-60">
             <div class="rounded bg-primary bg-gradient p-lg-5 p-4">
@@ -593,7 +610,7 @@
 
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="text-md-end">
-                        <a href="#" class="btn btn-danger"><i class="uil uil-youtube"></i> Subscribe</a>
+                        <a href="https://youtube.com/@CHAXBTBG?si=JOIb5b5Ftj8CZd_4" class="btn btn-danger"><i class="uil uil-youtube"></i> Subscribe</a>
                     </div>
                 </div>
             </div>

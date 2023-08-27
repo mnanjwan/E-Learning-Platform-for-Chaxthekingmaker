@@ -18,11 +18,10 @@ class AdvanceController extends Controller
                         ->get();
 
         if(!$current_lesson){
-            // return redirect()->back();
-            dd("No lesson found");
+        $current_lesson = Lesson::where('id', 1)
+                                ->where('course_id', 3)->first();
         }
 
-        
         return view('user.course.lessons.beginners', compact('lesson', 'current_lesson'));
     }
 

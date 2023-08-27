@@ -157,7 +157,7 @@
     <!-- Navbar End -->
 
     @yield('content')
-<a href="https://api.whatsapp.com/send?phone=33605640851"></a>
+{{-- <a href="https://api.whatsapp.com/send?phone="></a> --}}
     <!-- Footer Start -->
     <footer class="footer">
         <div class="container">
@@ -176,20 +176,24 @@
                                 </p>
                                 <ul class="list-unstyled social-icon foot-social-icon mb-0 mt-4">
                                     <li class="list-inline-item mb-0">
-                                        <a href="" target="_blank" class="rounded"><i
-                                                class="uil uil-facebook-f align-middle" title="facebook"></i></a>
+                                        <a href="https://wa.link/p5vyor" target="_blank" class="rounded"><i
+                                                class="uil uil-whatsapp align-middle" title="whatsapp"></i></a>
                                     </li>
                                     <li class="list-inline-item mb-0">
-                                        <a href="" target="_blank" class="rounded"><i
+                                        <a href="https://instagram.com/chaxbtbg?igshid=MjEwN2IyYWYwYw==" target="_blank" class="rounded"><i
                                                 class="uil uil-instagram align-middle" title="instagram"></i></a>
                                     </li>
                                     <li class="list-inline-item mb-0">
-                                        <a href="" target="_blank" class="rounded"><i
+                                        <a href="https://twitter.com/chaxbtbg?s=20" target="_blank" class="rounded"><i
                                                 class="uil uil-twitter align-middle" title="twitter"></i></a>
                                     </li>
                                     <li class="list-inline-item mb-0">
-                                        <a href="mailto:" class="rounded"><i class="uil uil-envelope align-middle"
-                                                title="email"></i></a>
+                                        <a href="https://youtube.com/@CHAXBTBG?si=JOIb5b5Ftj8CZd_4" class="rounded"><i class="uil uil-youtube align-middle"
+                                                title="youtube"></i></a>
+                                    </li>
+                                     <li class="list-inline-item mb-0">
+                                        <a href="https://t.me/CHAXKM" class="rounded"><i class="uil uil-telegram align-middle"
+                                                title="telegram"></i></a>
                                     </li>
                                 </ul>
                                 <!--end icon-->
@@ -199,10 +203,10 @@
                             <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
                                 <h5 class="footer-head">Quick links</h5>
                                 <ul class="list-unstyled footer-list mt-4">
-                                    <li>
+                                    {{-- <li>
                                         <a href="#" class="text-foot"><i
                                                 class="uil uil-angle-right-b me-1"></i> About us</a>
-                                    </li>
+                                    </li> --}}
                                     <li>
                                         <a href="{{route('mentorship')}}" class="text-foot"><i
                                                 class="uil uil-angle-right-b me-1"></i>
@@ -238,7 +242,7 @@
                                 <p class="mt-4">
                                     Sign up and receive the latest tips via email.
                                 </p>
-                                <form>
+                                <form action="#" method="">
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <div class="foot-subscribe mb-3">
@@ -459,17 +463,26 @@
         <div class="offcanvas-footer p-4 border-top text-center">
             <ul class="list-unstyled social-icon social mb-0">
                 <li class="list-inline-item mb-0">
-                    <a href="https://www.facebook.com/shreethemes" target="_blank" class="rounded"><i
-                            class="uil uil-facebook-f align-middle" title="facebook"></i></a>
-                </li>
-                <li class="list-inline-item mb-0">
-                    <a href="https://www.instagram.com/shreethemes/" target="_blank" class="rounded"><i
+                    <a href="https://instagram.com/chaxbtbg?igshid=MjEwN2IyYWYwYw==" target="_blank" class="rounded"><i
                             class="uil uil-instagram align-middle" title="instagram"></i></a>
                 </li>
                 <li class="list-inline-item mb-0">
-                    <a href="https://twitter.com/shreethemes" target="_blank" class="rounded"><i
+                    <a href="https://twitter.com/chaxbtbg?s=20" target="_blank" class="rounded"><i
                             class="uil uil-twitter align-middle" title="twitter"></i></a>
                 </li>
+                <li class="list-inline-item mb-0">
+                    <a href="https://youtube.com/@CHAXBTBG?si=JOIb5b5Ftj8CZd_4" target="_blank" class="rounded"><i
+                            class="uil uil-youtube align-middle" title="youtube"></i></a>
+                </li>
+                <li class="list-inline-item mb-0">
+                    <a href="https://wa.link/p5vyor" target="_blank" class="rounded"><i
+                            class="uil uil-whatsapp align-middle" title="whatsapp"></i></a>
+                </li>
+                <li class="list-inline-item mb-0">
+                    <a href="https://t.me/CHAXKM" target="_blank" class="rounded"><i
+                            class="uil uil-telegram align-middle" title="telegram"></i></a>
+                </li>
+                
             </ul>
             <!--end icon-->
         </div>

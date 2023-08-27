@@ -48,10 +48,7 @@
                 <div class="col-12 text-center">
                     <div class="section-title mb-4 pb-2">
                         <h4 class="title mb-4">Mentorship Plan</h4>
-                        <p class="text-muted para-desc mb-0 mx-auto">
-                            <span class="text-primary fw-bold">Signup</span> on one of our
-                            mentorship plan as a gate way to your success in trading.
-                        </p>
+                        <h5 class="mb-0 fw-normal text-muted">Join <span class="text-success fw-bold"><span class="counter-value" data-target="325">1</span>+</span> students enrolled in <span class="fw-bold text-primary">The Kings Maker</span> Mentorship, to attain mastery in the Financial institue</h5>
                     </div>
                 </div>
                 <!--end col-->
@@ -99,6 +96,10 @@
                                     <span class="icon h5 me-2"><i
                                             class="uil uil-check-circle align-middle"></i></span>Psychology
                                 </li>
+                            </li>
+                            <li class="h6 text-muted mb-0">
+                                <span class="icon h5 me-2"></span>
+                            </li>
                             </ul>
 
                             <div class="mt-4">
