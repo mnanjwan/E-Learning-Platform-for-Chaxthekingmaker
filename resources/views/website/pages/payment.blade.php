@@ -98,7 +98,6 @@
                                 </p>
                                 <!--end form-->
                                 <hr>
-
                                 <h1 class="mb-0 card-title title-dark text-dark">
                                     Our Bank Details
                                     <br>
@@ -110,6 +109,22 @@
                                 <p class="h3 mb-0">
                                     <span class="icon h5 "></span>Acct. No: 000987654
                                 </p>
+                                <hr>    
+
+                                <div class="subcribe-form">
+                                    <h1 class="mb-0 card-title title-dark text-warning">
+                                        Our Crypto Details
+                                        <br>
+                                        USDT (TRC20):
+                                    </h1>
+                                    <p class="h6 text-primary mb-0" style="">
+                                        <span class="icon h5 ">NOTE: </span>Please, confirm wallet address before making payments</p>
+                                    <form>
+                                        <input id="copyText" value="TGXVdVhNwGEC2VSPrF2XqJzHQ2H8MwHFHV" readonly class="form-control rounded-pill shadow" >
+                                        <button onclick="copyToClipboard()" class="btn btn-pills btn-primary">Copy Text</button>
+                                    </form><!--end form-->
+                                </div>
+                            
                             </div>
                         </div>
                     </div>
@@ -217,15 +232,12 @@
                                 </div>
                             @endif
 
-
                             {{-- <div class="card-body">
                                 <div class="d-flex justify-content-center mb-4">
                                     <span class="h4 mb-0 mt-2 text-primary">One Year Mentorship</span>
                                     <span class="h6 align-self-end fw-bold text-uppercase mb-2 ms-2">
                                     </span>
                                 </div>
-
-                                
 
                                 <ul class="feature list-inline">
                                     <li class="h6 mt-2 fw-normal">Mentorship Details</li>
@@ -265,7 +277,6 @@
                                 </div>
                             </div> --}}
 
-
                         </div>
                     </div>
                     <!--end col-->
@@ -290,11 +301,11 @@
                         <h4 class="title mb-4">Have Question ? Get in touch!</h4>
                         <p class="text-muted para-desc mx-auto">
                             Reach out to our team
-                            <span class="text-primary fw-bold">Landrick</span> for more
+                            <span class="text-primary fw-bold"></span> For more
                             information and calrity on any of our packages.
                         </p>
                         <div class="mt-4 pt-2">
-                            <a href="contact.html" class="btn btn-primary">Contact us <i
+                            <a href="{{route('contact')}}" class="btn btn-primary">Contact us <i
                                     class="mdi mdi-arrow-right"></i></a>
                         </div>
                     </div>
@@ -307,4 +318,31 @@
     </section>
     <!--end section-->
     <!-- FAQ n Contact End -->
+    <div class="modal fade" id="empty-cart" tabindex="-1" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content rounded shadow border-0">
+                                                <div class="modal-body py-5">
+                                                    <div class="text-center">
+                                                        <div class="mt-4">
+                                                            <h4>Your cart is empty.</h4>
+                                                            <p class="text-muted">Looks like you haven't made your choice yet...</p>
+                                                            <div class="mt-4">
+                                                                <a href="javascript:void(0)" class="btn btn-primary">Start Shopping</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+    <script>
+        function copyToClipboard() {
+            var copyText = document.getElementById("copyText");
+            copyText.select();
+            document.execCommand("copy");
+
+            alert("Text copied to clipboard: " + copyText.value);
+        }
+    </script>
 @endsection
