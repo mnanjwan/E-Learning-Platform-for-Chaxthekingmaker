@@ -84,5 +84,10 @@ Route::prefix('chaxadmin')->group(function () {
     Route::get('/course/lesson', 'Admin\Course\UploadController@index')->name('admin.course.add');
     Route::post('/course/lesson/post', 'Admin\Course\UploadController@upload')->name('admin.course.add.post');
 
+    #Lesson
+    Route::get('/course', 'Admin\Course\CourseController@index')->name('admin.course');
+
+
+
     Route::get('/logout', 'Admin\Auth\LogoutController@logout')->name('admin-logout');
 });

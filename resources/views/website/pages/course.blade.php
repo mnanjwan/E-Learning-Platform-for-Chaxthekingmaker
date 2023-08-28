@@ -56,7 +56,7 @@
                         <div class="row">
                             <div class="col-md-6 mt-4 pt-2">
                                 <div class="position-relative">
-                                    <img src="{{ asset('website_asset/images/course/3.png') }}"
+                                    <img src="{{ asset('website_asset/images/course/10.jpg') }}"
                                         class="rounded img-fluid mx-auto d-block" alt="">
                                     <div class="play-icon">
                                         <a href="#!" data-type="youtube" data-id="yba7hPeTSjk"
@@ -133,7 +133,7 @@
                         <div class="row">
                             <div class="col-md-6 mt-4 pt-2">
                                 <div class="position-relative">
-                                    <img src="{{ asset('website_asset/images/course/1.jpg') }}"
+                                    <img src="{{ asset('website_asset/images/course/20.jpg') }}"
                                         class="rounded img-fluid mx-auto d-block" alt="">
                                     <div class="play-icon">
                                         <a href="#!" data-type="youtube" data-id="yba7hPeTSjk"
@@ -162,8 +162,7 @@
                                                     <div class="align-items-center">
                                                         <i class="uil uil-notes h6"></i>
                                                         <p class="mb-0 d-inline fw-normal h6 ms-1"><a
-                                                                href="javascript:void(0)" class="text-muted">What is
-                                                                Technical Analysis</a></p>
+                                                                href="javascript:void(0)" class="text-muted">Level up</a></p>
                                                     </div>
                                                 </th>
                                                 <td class="p-3 text-end"><span class="badge bg-soft-primary">Read
@@ -174,8 +173,7 @@
                                                     <div class="align-items-center">
                                                         <i class="uil uil-notes h6"></i>
                                                         <p class="mb-0 d-inline fw-normal h6 ms-1"><a
-                                                                href="javascript:void(0)" class="text-muted">What are
-                                                                support and resistance</a></p>
+                                                                href="javascript:void(0)" class="text-muted">Trade like chax</a></p>
                                                     </div>
                                                 </th>
                                                 <td class="p-3 text-end"><i class="uil uil-lock"></i></td>
@@ -185,8 +183,7 @@
                                                     <div class="align-items-center">
                                                         <i class="uil uil-notes h6"></i>
                                                         <p class="mb-0 d-inline fw-normal h6 ms-1"><a
-                                                                href="javascript:void(0)" class="text-muted">What are
-                                                                swing highs and low</a></p>
+                                                                href="javascript:void(0)" class="text-muted">Doing it like chax</a></p>
                                                     </div>
                                                 </th>
                                                 <td class="p-3 text-end"><i class="uil uil-lock"></i></td>
@@ -210,7 +207,7 @@
                         <div class="row">
                             <div class="col-md-6 mt-4 pt-2">
                                 <div class="position-relative">
-                                    <img src="{{ asset('website_asset/images/course/2.jpg') }}"
+                                    <img src="{{ asset('website_asset/images/course/30.jpg') }}"
                                         class="rounded img-fluid mx-auto d-block" alt="">
                                     <div class="play-icon">
                                         <a href="#!" data-type="youtube" data-id="yba7hPeTSjk"
@@ -240,8 +237,7 @@
                                                     <div class="align-items-center">
                                                         <i class="uil uil-notes h6"></i>
                                                         <p class="mb-0 d-inline fw-normal h6 ms-1"><a
-                                                                href="javascript:void(0)" class="text-muted">Understanding
-                                                                Liquidity</a></p>
+                                                                href="javascript:void(0)" class="text-muted">Becoming a Pro trader</a></p>
                                                     </div>
                                                 </th>
                                                 <td class="p-3 text-end"><span class="badge bg-soft-primary">Read
@@ -263,7 +259,7 @@
                                                     <div class="align-items-center">
                                                         <i class="uil uil-notes h6"></i>
                                                         <p class="mb-0 d-inline fw-normal h6 ms-1"><a
-                                                                href="javascript:void(0)" class="text-muted">Time zone</a>
+                                                                href="javascript:void(0)" class="text-muted">Passing prop firms</a>
                                                         </p>
                                                     </div>
                                                 </th>
@@ -274,8 +270,7 @@
                                                     <div class="align-items-center">
                                                         <i class="uil uil-notes h6"></i>
                                                         <p class="mb-0 d-inline fw-normal h6 ms-1"><a
-                                                                href="javascript:void(0)" class="text-muted">Passing Prop
-                                                                firms</a></p>
+                                                                href="javascript:void(0)" class="text-muted">Getting funded</a></p>
                                                     </div>
                                                 </th>
                                                 <td class="p-3 text-end"><i class="uil uil-lock"></i></td>

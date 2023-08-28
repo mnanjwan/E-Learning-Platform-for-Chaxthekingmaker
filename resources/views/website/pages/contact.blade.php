@@ -209,7 +209,7 @@
                                         class="uil uil-youtube"></i></a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="https://t.me/CHAXKM" class="rounded"><i class="uil uil-whatsapp"></i></a>
+                                <a href="https://wa.link/p5vyor" class="rounded"><i class="uil uil-whatsapp"></i></a>
                             </li>
                             <li class="list-inline-item">
                                 <a href="https://t.me/CHAXKM" class="rounded"><i class="uil uil-telegram"></i></a>

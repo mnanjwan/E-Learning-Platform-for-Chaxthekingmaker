@@ -214,7 +214,7 @@
                                     </li>
 
                                     <li>
-                                        <a href="{{route('user-login')}}" class="text-foot"><i
+                                        <a href="{{route('user-login-page')}}" class="text-foot"><i
                                                 class="uil uil-angle-right-b me-1"></i> Login</a>
                                     </li>
                                 </ul>

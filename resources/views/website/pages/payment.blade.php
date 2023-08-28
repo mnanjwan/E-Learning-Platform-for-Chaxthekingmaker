@@ -101,16 +101,15 @@
                                 <h1 class="mb-0 card-title title-dark text-dark">
                                     Our Bank Details
                                     <br>
-                                    Chax The King Maker:
+                                    AYOKANMI OMONIYI:
                                 </h1>
                                 <p class="h3 mb-0">
-                                    <span class="icon h5 "></span>GTB Bank
+                                    <span class="icon h5 "></span>UBA Bank
                                 </p>
                                 <p class="h3 mb-0">
-                                    <span class="icon h5 "></span>Acct. No: 000987654
+                                    <span class="icon h5 "></span>Acct. No: 2282772145
                                 </p>
                                 <hr>    
-
                                 <div class="subcribe-form">
                                     <h1 class="mb-0 card-title title-dark text-warning">
                                         Our Crypto Details
@@ -138,7 +137,7 @@
                                 </h4>
                             </div>
 
-                            @if ($order->amount == 300)
+                            @if ($order->amount == 500)
                                 <div class="card-body">
                                     <div class="d-flex justify-content-center mb-4">
                                         <span class="h4 mb-0 mt-2 text-primary">One Year Mentorship</span>
