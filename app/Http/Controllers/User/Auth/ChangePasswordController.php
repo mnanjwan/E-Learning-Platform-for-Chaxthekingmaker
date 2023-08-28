@@ -31,7 +31,8 @@ class ChangePasswordController extends Controller
                 'password' => Hash::make($request->password)
             ]);
 
-            return redirect()->back()->with('success', 'Password changed successfully.');
+            dd($request->all());
+            return redirect()->url('user/settings/#password')->with('success', 'Password changed successfully.');
         } else {
             return back()->withErrors(['current_password' => 'Incorrect current password.']);
         }

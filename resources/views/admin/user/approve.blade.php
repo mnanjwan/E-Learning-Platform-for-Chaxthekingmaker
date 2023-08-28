@@ -81,7 +81,11 @@
                                                     </a>
                                                     <div class="dropdown-menu dropdown-menu-right"
                                                         aria-labelledby="dropdownMenuLink">
-                                                        <a class="dropdown-item" href="#">View</a>
+                                                        
+                                    @foreach ($user->orders as $order)
+                                    <a class="dropdown-item" href="{{ route('approve.user.transaction', ['order_id' => $order->order_id]) }}">Approve</a>
+                                    @endforeach
+                                                        
                                                         <a class="dropdown-item" href="#">Activate</a>
                                                     </div>
                                                 </div>
