@@ -101,8 +101,7 @@
 
                 <div class="col-md-3 col-12 mt-4 pt-2">
                     <div class="card pricing pricing-primary best-plan rounded shadow text-center border-0">
-                        <div class="ribbon ribbon-right ribbon-warning overflow-hidden"><span
-                                class="text-center d-block shadow small h6">Best</span></div>
+                        
                         <div class="card-body py-5">
                             <li class="list-inline-item mx-2 mt-3"><a href="" target="_blank"
                                 class="btn btn-icon btn-pills btn-lg btn-primary" data-bs-toggle="tooltip"
@@ -140,6 +139,8 @@
 
                 <div class="col-md-3 col-12 mt-4 pt-2">
                     <div class="card pricing pricing-primary best-plan rounded bg-light text-center border-0">
+                        <div class="ribbon ribbon-right ribbon-warning overflow-hidden"><span
+                            class="text-center d-block shadow small h6">Best</span></div>
                         <div class="card-body py-5">
                             <li class="list-inline-item mx-2 mt-3"><a href="" target="_blank"
                                 class="btn btn-icon btn-pills btn-lg btn-primary" data-bs-toggle="tooltip"
