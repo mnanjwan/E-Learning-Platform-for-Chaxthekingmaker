@@ -88,10 +88,10 @@
     <script src="{{ asset('user_asset/js/isotope.js') }}"></script>
     <script src="{{ asset('user_asset/js/jquery.counterup.min.js') }}"></script>
     <script src="{{ asset('user_asset/js/fancybox.js') }}"></script>
-    <script src="{{ asset('user_asset/js/chart.js') }}"></script>
-    <script src="{{ asset('user_asset/js/doughnut-chart.js') }}"></script>
-    <script src="{{ asset('user_asset/js/bar-chart.js') }}"></script>
-    <script src="{{ asset('user_asset/js/line-chart.js') }}"></script>
+    {{-- <script src="{{ asset('user_asset/js/chart.js') }}"></script> --}}
+    {{-- <script src="{{ asset('user_asset/js/doughnut-chart.js') }}"></script> --}}
+    {{-- <script src="{{ asset('user_asset/js/bar-chart.js') }}"></script> --}}
+    {{-- <script src="{{ asset('user_asset/js/line-chart.js') }}"></script> --}}
     <script src="{{ asset('user_asset/js/datedropper.min.js') }}"></script>
     <script src="{{ asset('user_asset/js/emojionearea.min.js') }}"></script>
     <script src="{{ asset('user_asset/js/animated-skills.js') }}"></script>
