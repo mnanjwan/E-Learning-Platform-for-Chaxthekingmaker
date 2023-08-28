@@ -306,10 +306,8 @@
                                         data-parent="#accordionCourseExample">
                                         <div class="card-body p-0">
                                             <ul class="curriculum-sidebar-list">
-
                                                 @foreach ($lesson as $lesson)
                                                     <li class="course-item-link ">
-
                                                         <div class="course-item-content-wrap">
                                                             <div class="custom-control custom-checkbox">
                                                             </div><!-- end custom-control -->
@@ -325,14 +323,12 @@
                                                                             href="{{ route('advance.lesson', ['id' => $lesson->id]) }}">
                                                                             {{ $lesson->sequence }}.{{ $lesson->title }}
                                                                         </a>
-                                                                        @else
+                                                                    @else
                                                                         <a
                                                                             href="{{ route('beginners.lesson', ['id' => $lesson->id]) }}">
                                                                             {{ $lesson->sequence }}.{{ $lesson->title }}
                                                                         </a>
                                                                     @endif
-
-
                                                                 </h4>
 
                                                                 <div class="courser-item-meta-wrap">
@@ -344,8 +340,6 @@
                                                         </div><!-- end course-item-content-wrap -->
                                                     </li>
                                                 @endforeach
-
-
                                             </ul>
                                         </div><!-- end card-body -->
                                     </div><!-- end collapse -->

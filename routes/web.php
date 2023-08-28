@@ -56,6 +56,9 @@ Route::prefix('user')->group(function () {
     Route::get('/referrals', 'User\Referral\ReferralController@index')->name('user.referral');
     Route::get('/transaction/history', 'User\Transaction\TransactionController@index')->name('transaction.history');
     Route::get('/logout', 'User\Auth\LogoutController@logout')->name('user-logout');
+
+    Route::get('/settings', 'User\Auth\ChangePasswordController@index')->name('settings');
+    
 });
 
 #Admin Auth
