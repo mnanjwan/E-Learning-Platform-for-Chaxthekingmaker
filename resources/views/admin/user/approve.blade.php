@@ -1,13 +1,13 @@
 @extends('user.layouts.master')
-<!-- Include jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<!-- Include DataTables CSS and JS -->
-<link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css">
+
+@push('table-css')
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css">
+@endpush
 
 @section('content')
     <!-- ================================
-                    START DASHBOARD AREA
-                ================================= -->
+                                    START DASHBOARD AREA
+                                ================================= -->
     <section class="dashboard-area">
         @include('admin.includes.asidebar')
         <div class="dashboard-content-wrap">
@@ -23,7 +23,7 @@
 
                 <div class="table-responsive mb-5">
                     <h3 class="fs-18 font-weight-semi-bold pb-4">Student Details</h3>
-                    <table id="dataTable" class="table generic-table" >
+                    <table id="dataTable" class="table generic-table">
                         <thead>
                             <tr>
                                 <th scope="col">Name</th>
@@ -111,18 +111,19 @@
         </div><!-- end dashboard-content-wrap -->
     </section><!-- end dashboard-area -->
     <!-- ================================
-                    END DASHBOARD AREA
-                ================================= -->
+                                    END DASHBOARD AREA
+                                ================================= -->
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
-<script>
-    // jQuery.noConflict();
-    jQuery(document).ready(function($) {
-        // Your DataTables initialization code here
-        $('#dataTable').DataTable();
-    });
-</script>
-
+    @push('table-scripts')
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+        <script>
+            // jQuery.noConflict();
+            jQuery(document).ready(function($) {
+                // Your DataTables initialization code here
+                $('#dataTable').DataTable();
+            });
+        </script>
+    @endpush
 
 @endsection

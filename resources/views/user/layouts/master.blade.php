@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="{{ asset('user_asset/css/fancybox.css') }}" />
     <link rel="stylesheet" href="{{ asset('user_asset/css/style.css') }}" />
     <link rel="stylesheet" href="{{ asset('user_asset/libs/sweetalert2/sweetalert2.min.css') }}">
+    @stack('table-css')
 
     <!-- end inject -->
 </head>
@@ -55,11 +56,6 @@
         import Swal from 'sweetalert2';
         window.Swal = Swal;
     </script>
-
-<script>
-    // For general erros and success
-   
-
     <script>
         // For general erros and success
         @if (session()->has('error'))
@@ -81,8 +77,9 @@
             });
         @endif
     </script>
-</script>
-<script src="{{ asset('user_asset/libs/sweetalert2/sweetalert2.min.js') }}"></script>
+
+    @stack('table-scripts')
+    <script src="{{ asset('user_asset/libs/sweetalert2/sweetalert2.min.js') }}"></script>
     <!-- template js files -->
     <script src="{{ asset('user_asset/js/jquery-3.4.1.min.js') }}"></script>
     <script src="{{ asset('user_asset/js/bootstrap.bundle.min.js') }}"></script>
