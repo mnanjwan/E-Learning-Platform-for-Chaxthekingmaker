@@ -1,8 +1,14 @@
 @extends('user.layouts.master')
+<!-- Include jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Include DataTables CSS and JS -->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css">
+
 @section('content')
     <!-- ================================
-        START DASHBOARD AREA
-    ================================= -->
+                    START DASHBOARD AREA
+                ================================= -->
     <section class="dashboard-area">
         @include('admin.includes.asidebar')
         <div class="dashboard-content-wrap">
@@ -18,7 +24,7 @@
 
                 <div class="table-responsive mb-5">
                     <h3 class="fs-18 font-weight-semi-bold pb-4">Student Details</h3>
-                    <table class="table generic-table">
+                    <table id="dataTable" class="table generic-table" >
                         <thead>
                             <tr>
                                 <th scope="col">Name</th>
@@ -48,19 +54,19 @@
                                             <li>{{ $user->phone }}</li>
                                         </ul>
                                     </th>
-                                   
+
 
                                     @foreach ($user->orders as $order)
-                                    <td>
-                                        <ul class="generic-list-item">
-                                            <li>{{ $order->product_name }}</li>
-                                        </ul>
-                                    </td>
+                                        <td>
+                                            <ul class="generic-list-item">
+                                                <li>{{ $order->product_name }}</li>
+                                            </ul>
+                                        </td>
                                     @endforeach
-                                   
+
                                     <td>
                                         <ul class="generic-list-item">
-                                            <li> {{"July 12, 2019"}} </li>
+                                            <li> {{ 'July 12, 2019' }} </li>
                                         </ul>
                                     </td>
                                     <td>
@@ -81,11 +87,12 @@
                                                     </a>
                                                     <div class="dropdown-menu dropdown-menu-right"
                                                         aria-labelledby="dropdownMenuLink">
-                                                        
-                                    @foreach ($user->orders as $order)
-                                    <a class="dropdown-item" href="{{ route('approve.user.transaction', ['order_id' => $order->order_id]) }}">Approve</a>
-                                    @endforeach
-                                                        
+
+                                                        @foreach ($user->orders as $order)
+                                                            <a class="dropdown-item"
+                                                                href="{{ route('approve.user.transaction', ['order_id' => $order->order_id]) }}">Approve</a>
+                                                        @endforeach
+
                                                         <a class="dropdown-item" href="#">Activate</a>
                                                     </div>
                                                 </div>
@@ -105,6 +112,27 @@
         </div><!-- end dashboard-content-wrap -->
     </section><!-- end dashboard-area -->
     <!-- ================================
-        END DASHBOARD AREA
-    ================================= -->
+                    END DASHBOARD AREA
+                ================================= -->
+    {{-- <script src="https://cdn.datatables.net/1.11.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#dataTable').DataTable();
+        });
+    </script> --}}
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+<script>
+    jQuery.noConflict();
+    jQuery(document).ready(function($) {
+        // Your DataTables initialization code here
+        $('#dataTable').DataTable();
+    });
+</script>
+
+
 @endsection

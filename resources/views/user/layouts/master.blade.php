@@ -58,18 +58,7 @@
 
 <script>
     // For general erros and success
-    <script>
-        // For validation errors
-        @if ($errors->any())
-
-            Swal.fire({
-                title: "Notification!!",
-                text: "@foreach ($errors->all() as $error){{ $error }} @endforeach",
-                icon: "error",
-                button: "close",
-            });
-        @endif
-    </script>
+   
 
     <script>
         // For general erros and success

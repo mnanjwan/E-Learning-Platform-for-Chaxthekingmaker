@@ -21,20 +21,21 @@ class ChangePasswordController extends Controller
             'current_password' => 'required',
             'password' => 'required|confirmed|min:8',
         ]);
-
+        dd($request->all());
         // $user = Auth::user();
         $user = User::find(auth()->user()->id);
 
-        if (Hash::check($request->current_password, $user->password)) {
-
-            $user->update([
-                'password' => Hash::make($request->password)
-            ]);
-
-            dd($request->all());
-            return redirect()->url('user/settings/#password')->with('success', 'Password changed successfully.');
-        } else {
+        if (!Hash::check($request->current_password, $user->password)) {
+            
             return back()->withErrors(['current_password' => 'Incorrect current password.']);
-        }
+           
+        } 
+        $user->update([
+            'password' => Hash::make($request->password)
+        ]);
+
+       
+        return redirect()->url('user/settings/#password')->with('success', 'Password changed successfully.');
+        
     }
 }
