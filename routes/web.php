@@ -55,10 +55,12 @@ Route::prefix('user')->group(function () {
 
     Route::get('/referrals', 'User\Referral\ReferralController@index')->name('user.referral');
     Route::get('/transaction/history', 'User\Transaction\TransactionController@index')->name('transaction.history');
-    Route::get('/logout', 'User\Auth\LogoutController@logout')->name('user-logout');
-
     Route::get('/settings', 'User\Auth\ChangePasswordController@index')->name('settings');
-    
+
+
+    Route::post('/change-password', 'User\Auth\ChangePasswordController@changePassword')->name('change.password');
+
+    Route::get('/logout', 'User\Auth\LogoutController@logout')->name('user-logout');
 });
 
 #Admin Auth
@@ -77,9 +79,9 @@ Route::prefix('chaxadmin')->group(function () {
 
     #transaction
     Route::get('/transaction/{order_id}', 'Admin\User\ApproveUserController@approve')->name('approve.user.transaction'); //Approve user
-    Route::get('/transaction', 'Admin\Transaction\TransactionController@payment')->name('admin.user.transaction'); 
-    Route::get('/withdraw', 'Admin\Transaction\WithdrawController@withdraw')->name('admin.user.withdrawal'); 
-    Route::get('/transaction/withdrawal/{transaction_id}', 'Admin\Transaction\WithdrawController@approve')->name('admin.user.withdraw.process'); 
+    Route::get('/transaction', 'Admin\Transaction\TransactionController@payment')->name('admin.user.transaction');
+    Route::get('/withdraw', 'Admin\Transaction\WithdrawController@withdraw')->name('admin.user.withdrawal');
+    Route::get('/transaction/withdrawal/{transaction_id}', 'Admin\Transaction\WithdrawController@approve')->name('admin.user.withdraw.process');
 
     #Referrals
     Route::get('/referrals', 'Admin\Referral\ReferralController@index')->name('admin.user.referral');

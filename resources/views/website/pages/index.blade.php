@@ -265,14 +265,13 @@
                 <div class="col-lg-4 col-md-6 mt-4 pt-2">
                     <div class="card pricing pricing-primary business-rate border-0 p-4 rounded-md shadow">
                         <div class="card-body p-0">
-                            <span class="py-2 px-4 d-inline-block bg-soft-primary h6 mb-0 text-primary rounded-lg">One
-                                Year</span>
-                            <h2 class="fw-bold mb-0 mt-3">$500.00</h2>
+                            <span class="py-2 px-4 d-inline-block bg-soft-primary h6 mb-0 text-primary rounded-lg">Bootcamp</span>
+                            <h2 class="fw-bold mb-0 mt-3">Comming Soon</h2>
                             <p class="text-muted"></p>
 
                             <p class="text-muted">
-                                Unrestricted entry to complimentary Forex materials and
-                                courses at the commencement of your Forex voyage.
+                                Offers intensive training in financial market. Participants will gain practical skills,
+                                insights into market trends, and risk management strategies for successful trading endeavors
                             </p>
 
                             <ul class="list-unstyled pt-3 border-top">
@@ -285,31 +284,23 @@
                                             class="uil uil-check-circle align-middle"></i></span>Personal Contact to Mentor
                                 </li>
                                 <li class="h6 text-muted mb-0">
-                                    <span class="icon h5 me-2"><i
-                                            class="uil uil-check-circle align-middle"></i></span>Access to study portal
+                                    <span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Learn the basics of how Chax trades
                                 </li>
                                 <li class="h6 text-muted mb-0">
                                     <span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Risk
                                     Management
                                 </li>
                                 <li class="h6 text-muted mb-0">
-                                    <span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>How
-                                    to Pass All Prop Firm
-                                </li>
-                                <li class="h6 text-muted mb-0">
                                     <span class="icon h5 me-2"><i
                                             class="uil uil-check-circle align-middle"></i></span>Psychology
                                 </li>
-                                </li>
-                                <li class="h6 text-muted mb-0">
-                                    <span class="icon h5 me-2"></span>
-                                </li>
+                              
                             </ul>
 
                             <div class="mt-4">
                                 <div class="d-grid">
                                     <a class="btn btn-primary"
-                                        href="{{ route('checkout', ['price' => '500', 'mentorship' => 'One year mentorship']) }}">Enroll</a>
+                                        href="#" @disabled(true)>Comming Soon</a>
                                 </div>
                                 <p class="text-muted mt-3 mb-0">*No credit card required</p>
                             </div>

@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="{{ asset('user_asset/css/bootstrap-select.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('user_asset/css/fancybox.css') }}" />
     <link rel="stylesheet" href="{{ asset('user_asset/css/style.css') }}" />
+    <link rel="stylesheet" href="{{ asset('user_asset/libs/sweetalert2/sweetalert2.min.css') }}">
+
     <!-- end inject -->
 </head>
 
@@ -39,7 +41,7 @@
     </div>
     <!-- end cssload-loader -->
 
-  
+
 
     @yield('content')
 
@@ -49,6 +51,49 @@
     </div>
     <!-- end scroll top -->
 
+    <script>
+        import Swal from 'sweetalert2';
+        window.Swal = Swal;
+    </script>
+
+<script>
+    // For general erros and success
+    <script>
+        // For validation errors
+        @if ($errors->any())
+
+            Swal.fire({
+                title: "Notification!!",
+                text: "@foreach ($errors->all() as $error){{ $error }} @endforeach",
+                icon: "error",
+                button: "close",
+            });
+        @endif
+    </script>
+
+    <script>
+        // For general erros and success
+        @if (session()->has('error'))
+            Swal.fire({
+                title: "Notification!!",
+                text: "{{ session()->get('error') }}",
+                icon: "error",
+                button: "close",
+            });
+        @endif
+
+        @if (session()->has('success'))
+
+            Swal.fire({
+                title: "Notification!",
+                text: "{{ session()->get('success') }}",
+                icon: "success",
+                button: "close",
+            });
+        @endif
+    </script>
+</script>
+<script src="{{ asset('user_asset/libs/sweetalert2/sweetalert2.min.js') }}"></script>
     <!-- template js files -->
     <script src="{{ asset('user_asset/js/jquery-3.4.1.min.js') }}"></script>
     <script src="{{ asset('user_asset/js/bootstrap.bundle.min.js') }}"></script>
