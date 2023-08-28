@@ -66,16 +66,17 @@
 
                             <div class="card-body">
                                 <ul class="feature list-inline">
-                                    <li class="h6 text-muted mb-0">
-                                        <span class="icon h5 me-2"></span>Order number: {{ $signal }}
+                                    <li class="h6 text-primary mb-0" style="font-size: 2em">
+                                        <span class="icon h5 me-2" ></span>Duration: {{ $signal }} month
                                     </li>
                       
-                                    <li class="h6 text-muted mb-0">
-                                        <span class="icon h5 me-2"></span>Total: ${{ number_format($amount) }}
+                                    <li class="h6 text-primary mb-0" style="font-size: 2em">
+                                        <span class="icon h5 me-2" ></span>Total: ${{ number_format($amount) }}
                                     </li>
                                     <li class="h6 text-muted mb-0">
                                         <span class="icon h5 me-2"></span>Payment method: {{ 'Bank Transfer' }}
                                     </li>
+                                    <hr>
 
                                 </ul>
                                 <p class="h6 text-muted mb-0">

@@ -230,7 +230,7 @@
 
                     <div class="col-md-3 mt-4 mt-sm-0">
                         <div class="text-md-end text-center">
-                            <a href="{{ route('signal') }}" class="btn btn-light">Get Out Signals</a>
+                            <a href="{{ route('signal') }}" class="btn btn-light">Get Our Signals</a>
                         </div>
                     </div>
                     <!--end col-->
