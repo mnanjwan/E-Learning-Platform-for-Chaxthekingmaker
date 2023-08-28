@@ -67,7 +67,7 @@
                             <div class="card-body">
                                 <ul class="feature list-inline">
                                     <li class="h6 text-primary mb-0" style="font-size: 2em">
-                                        <span class="icon h5 me-2" ></span>Duration: {{ $signal }} month
+                                        <span class="icon h5 me-2" ></span>Duration: {{ $signal }}
                                     </li>
                       
                                     <li class="h6 text-primary mb-0" style="font-size: 2em">
