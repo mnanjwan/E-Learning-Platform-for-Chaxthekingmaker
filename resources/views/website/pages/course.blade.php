@@ -188,17 +188,7 @@
                                                 </th>
                                                 <td class="p-3 text-end"><i class="uil uil-lock"></i></td>
                                             </tr>
-                                            <tr>
-                                                <th class="p-3">
-                                                    <div class="align-items-center">
-                                                        <i class="uil uil-notes h6"></i>
-                                                        <p class="mb-0 d-inline fw-normal h6 ms-1"><a
-                                                                href="javascript:void(0)" class="text-muted">Understanding
-                                                                Meta trader 4</a></p>
-                                                    </div>
-                                                </th>
-                                                <td class="p-3 text-end"><i class="uil uil-lock"></i></td>
-                                            </tr>
+                                           
                                         </tbody>
                                     </table>
                                 </div>

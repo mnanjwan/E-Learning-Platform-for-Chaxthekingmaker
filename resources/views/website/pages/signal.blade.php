@@ -94,7 +94,7 @@
                                 <span class="h4 align-self-end mb-1">/mo</span>
                             </div>
 
-                            <a href="{{route('signal.payment', ['signal' => 1, 'amount' => 120])}}" class="btn btn-primary btn-sm mt-4">Buy Now</a>
+                            <a href="{{route('signal.payment', ['signal' => "1 month", 'amount' => 120])}}" class="btn btn-primary btn-sm mt-4">Buy Now</a>
                         </div>
                     </div>
                 </div><!--end col-->
@@ -114,7 +114,8 @@
                             </div>
 
                             
-                            <a href="javascript:void(0)" class="btn btn-primary btn-sm mt-4">Get Started</a>
+                            <a href="{{route('signal.payment', ['signal' => "3 month", 'amount' => 300])}}" class="btn btn-primary btn-sm mt-4">Buy Now</a>
+
                         </div>
                     </div>
                 </div><!--end col-->
@@ -131,8 +132,8 @@
                                 <span class="h4 align-self-end mb-1">6/mo</span>
                             </div>
 
+                            <a href="{{route('signal.payment', ['signal' => "6 month", 'amount' => 550])}}" class="btn btn-primary btn-sm mt-4">Buy Now</a>
                             
-                            <a href="javascript:void(0)" class="btn btn-primary btn-sm mt-4">Get Started</a>
                         </div>
                     </div>
                 </div><!--end col-->
@@ -149,8 +150,8 @@
                                 <span class="h4 align-self-end mb-1">/yr</span>
                             </div>
 
+                            <a href="{{route('signal.payment', ['signal' => "1 year", 'amount' => 1000])}}" class="btn btn-primary btn-sm mt-4">Buy Now</a>
                             
-                            <a href="javascript:void(0)" class="btn btn-primary btn-sm mt-4">Try It Now</a>
                         </div>
                     </div>
                 </div><!--end col-->
