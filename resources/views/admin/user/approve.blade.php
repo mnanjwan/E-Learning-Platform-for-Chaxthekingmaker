@@ -1,7 +1,6 @@
 @extends('user.layouts.master')
 <!-- Include jQuery -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
 <!-- Include DataTables CSS and JS -->
 <link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css">
 
@@ -114,20 +113,11 @@
     <!-- ================================
                     END DASHBOARD AREA
                 ================================= -->
-    {{-- <script src="https://cdn.datatables.net/1.11.6/js/jquery.dataTables.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-
-    <script>
-        $(document).ready(function() {
-            $('#dataTable').DataTable();
-        });
-    </script> --}}
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
 <script>
-    jQuery.noConflict();
+    // jQuery.noConflict();
     jQuery(document).ready(function($) {
         // Your DataTables initialization code here
         $('#dataTable').DataTable();
