@@ -25,6 +25,8 @@ Route::get('/contact', 'Website\ContactPageController@index')->name('contact');
 Route::get('/mentorship/checkout/{price}/{mentorship}', 'Website\CheckoutPageController@index')->name('checkout');
 Route::post('/checkout/{price}/{mentorship}', 'Website\CheckoutPageController@checkout_process')->name('checkout-process');
 Route::get('/checkout/payment/{order_id}', 'Website\PaymentPageController@index')->name('payment');
+Route::get('/signals', 'Website\SignalPageController@index')->name('signal');
+Route::get('/signals/payment/{signal}/{amount}', 'Website\SignalPageController@payment')->name('signal.payment');
 #Referrals 
 Route::post('/checkout/{price}/ref/{id}/{mentorship}', 'Website\ReferralPageController@store')->name('referral.checkout.process');
 Route::get('/mentorship/ref/{id}', 'Website\ReferralPageController@index')->name('register');

@@ -48,7 +48,10 @@
                 <div class="col-12 text-center">
                     <div class="section-title mb-4 pb-2">
                         <h4 class="title mb-4">Mentorship Plan</h4>
-                        <h5 class="mb-0 fw-normal text-muted">Join <span class="text-success fw-bold"><span class="counter-value" data-target="325">1</span>+</span> students enrolled in <span class="fw-bold text-primary">The Kings Maker</span> Mentorship, to attain mastery in the Financial institue</h5>
+                        <h5 class="mb-0 fw-normal text-muted">Join <span class="text-success fw-bold"><span
+                                    class="counter-value" data-target="325">1</span>+</span> students enrolled in <span
+                                class="fw-bold text-primary">The Kings Maker</span> Mentorship, to attain mastery in the
+                            Financial institue</h5>
                     </div>
                 </div>
                 <!--end col-->
@@ -73,16 +76,16 @@
 
                             <ul class="list-unstyled pt-3 border-top">
                                 <li class="h6 text-muted mb-0">
+                                    <span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>2
+                                    live zoom session per week
+                                </li>
+                                <li class="h6 text-muted mb-0">
                                     <span class="icon h5 me-2"><i
                                             class="uil uil-check-circle align-middle"></i></span>Personal Contact to Mentor
                                 </li>
                                 <li class="h6 text-muted mb-0">
                                     <span class="icon h5 me-2"><i
                                             class="uil uil-check-circle align-middle"></i></span>Access to study portal
-                                </li>
-                                <li class="h6 text-muted mb-0">
-                                    <span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>My
-                                    Live Signals and Trades ideas
                                 </li>
                                 <li class="h6 text-muted mb-0">
                                     <span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Risk
@@ -96,10 +99,10 @@
                                     <span class="icon h5 me-2"><i
                                             class="uil uil-check-circle align-middle"></i></span>Psychology
                                 </li>
-                            </li>
-                            <li class="h6 text-muted mb-0">
-                                <span class="icon h5 me-2"></span>
-                            </li>
+                                </li>
+                                <li class="h6 text-muted mb-0">
+                                    <span class="icon h5 me-2"></span>
+                                </li>
                             </ul>
 
                             <div class="mt-4">
@@ -132,7 +135,7 @@
 
                             <ul class="list-unstyled pt-3 border-top">
                                 <li class="h6 text-muted mb-0">
-                                    <span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>2
+                                    <span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>3
                                     live zoom session per week
                                 </li>
                                 <li class="h6 text-muted mb-0">
@@ -198,6 +201,10 @@
                         <div class="section-title text-md-start text-center">
                             <ul class="feature list-inline">
                                 <li class="h6 mb-0" style="color: white">
+                                    <span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>1
+                                    months signals
+                                </li>
+                                <li class="h6 mb-0" style="color: white">
                                     <span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>3
                                     months signals
                                 </li>
@@ -242,7 +249,7 @@
 
                     <div class="col-md-3 mt-4 mt-sm-0">
                         <div class="text-md-end text-center">
-                            <a href="checkout.html" class="btn btn-light">Get Out Signals</a>
+                            <a href="{{route('signal')}}" class="btn btn-light">Get Out Signals</a>
                         </div>
                     </div>
                     <!--end col-->

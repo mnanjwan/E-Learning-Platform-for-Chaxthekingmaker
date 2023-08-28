@@ -109,7 +109,7 @@
                                 <p class="h3 mb-0">
                                     <span class="icon h5 "></span>Acct. No: 2282772145
                                 </p>
-                                <hr>    
+                                <hr>
                                 <div class="subcribe-form">
                                     <h1 class="mb-0 card-title title-dark text-warning">
                                         Our Crypto Details
@@ -117,13 +117,17 @@
                                         USDT (TRC20):
                                     </h1>
                                     <p class="h6 text-primary mb-0" style="">
-                                        <span class="icon h5 ">NOTE: </span>Please, confirm wallet address before making payments</p>
+                                        <span class="icon h5 ">NOTE: </span>Please, confirm wallet address before making
+                                        payments
+                                    </p>
                                     <form>
-                                        <input id="copyText" value="TGXVdVhNwGEC2VSPrF2XqJzHQ2H8MwHFHV" readonly class="form-control rounded-pill shadow" >
-                                        <button onclick="copyToClipboard()" class="btn btn-pills btn-primary">Copy Text</button>
+                                        <input id="copyText" value="TGXVdVhNwGEC2VSPrF2XqJzHQ2H8MwHFHV" readonly
+                                            class="form-control rounded-pill shadow">
+                                        <button onclick="copyToClipboard()" class="btn btn-pills btn-primary">Copy
+                                            Text</button>
                                     </form><!--end form-->
                                 </div>
-                            
+
                             </div>
                         </div>
                     </div>
@@ -304,7 +308,7 @@
                             information and calrity on any of our packages.
                         </p>
                         <div class="mt-4 pt-2">
-                            <a href="{{route('contact')}}" class="btn btn-primary">Contact us <i
+                            <a href="{{ route('contact') }}" class="btn btn-primary">Contact us <i
                                     class="mdi mdi-arrow-right"></i></a>
                         </div>
                     </div>
@@ -318,22 +322,22 @@
     <!--end section-->
     <!-- FAQ n Contact End -->
     <div class="modal fade" id="empty-cart" tabindex="-1" aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered">
-                                            <div class="modal-content rounded shadow border-0">
-                                                <div class="modal-body py-5">
-                                                    <div class="text-center">
-                                                        <div class="mt-4">
-                                                            <h4>Your cart is empty.</h4>
-                                                            <p class="text-muted">Looks like you haven't made your choice yet...</p>
-                                                            <div class="mt-4">
-                                                                <a href="javascript:void(0)" class="btn btn-primary">Start Shopping</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded shadow border-0">
+                <div class="modal-body py-5">
+                    <div class="text-center">
+                        <div class="mt-4">
+                            <h4>Your cart is empty.</h4>
+                            <p class="text-muted">Looks like you haven't made your choice yet...</p>
+                            <div class="mt-4">
+                                <a href="javascript:void(0)" class="btn btn-primary">Start Shopping</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script>
         function copyToClipboard() {

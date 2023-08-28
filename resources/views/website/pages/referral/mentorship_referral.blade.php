@@ -76,16 +76,16 @@
 
                             <ul class="list-unstyled pt-3 border-top">
                                 <li class="h6 text-muted mb-0">
+                                    <span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>2
+                                    live zoom session per week
+                                </li>
+                                <li class="h6 text-muted mb-0">
                                     <span class="icon h5 me-2"><i
                                             class="uil uil-check-circle align-middle"></i></span>Personal Contact to Mentor
                                 </li>
                                 <li class="h6 text-muted mb-0">
                                     <span class="icon h5 me-2"><i
                                             class="uil uil-check-circle align-middle"></i></span>Access to study portal
-                                </li>
-                                <li class="h6 text-muted mb-0">
-                                    <span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>My
-                                    Live Signals and Trades ideas
                                 </li>
                                 <li class="h6 text-muted mb-0">
                                     <span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Risk
@@ -99,10 +99,15 @@
                                     <span class="icon h5 me-2"><i
                                             class="uil uil-check-circle align-middle"></i></span>Psychology
                                 </li>
+                                </li>
+                                <li class="h6 text-muted mb-0">
+                                    <span class="icon h5 me-2"></span>
+                                </li>
                             </ul>
                             <div class="mt-4">
                                 <div class="d-grid">
-                                    <a class="btn btn-primary" href="{{ route('referral.checkout.page', ['price' => '500', 'id' => $id]) }}">Enroll</a>
+                                    <a class="btn btn-primary"
+                                        href="{{ route('referral.checkout.page', ['price' => '500', 'id' => $id]) }}">Enroll</a>
                                 </div>
                                 <p class="text-muted mt-3 mb-0">*No credit card required</p>
                             </div>
@@ -129,7 +134,7 @@
 
                             <ul class="list-unstyled pt-3 border-top">
                                 <li class="h6 text-muted mb-0">
-                                    <span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>2
+                                    <span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>3
                                     live zoom session per week
                                 </li>
                                 <li class="h6 text-muted mb-0">
@@ -160,7 +165,8 @@
 
                             <div class="mt-4">
                                 <div class="d-grid">
-                                    <a class="btn btn-primary" href="{{ route('referral.checkout.page', ['price' => '1000', 'id' => $id]) }}">Enroll</a>
+                                    <a class="btn btn-primary"
+                                        href="{{ route('referral.checkout.page', ['price' => '1000', 'id' => $id]) }}">Enroll</a>
                                 </div>
                                 <p class="text-muted mt-3 mb-0">*No credit card required</p>
                             </div>
@@ -262,7 +268,7 @@
                             Reach out to our team
                         </p>
                         <div class="mt-4 pt-2">
-                            <a href="{{route('contact')}}" class="btn btn-primary">Contact us <i
+                            <a href="{{ route('contact') }}" class="btn btn-primary">Contact us <i
                                     class="mdi mdi-arrow-right"></i></a>
                         </div>
                     </div>

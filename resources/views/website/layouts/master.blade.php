@@ -25,6 +25,13 @@
     <!-- Style Css-->
     <link href="{{ asset('website_asset/css/style.min.css') }}" id="color-opt" class="theme-opt" rel="stylesheet"
         type="text/css" />
+
+        <style>
+            video {
+        
+              outline: none; /* Remove the default outline when the video is focused */
+            }
+          </style>
 </head>
 
 <body>
@@ -97,7 +104,7 @@
                     <li>
                         <a href="{{route('course')}}" class="sub-menu-item">Courses</a>
                     </li>
-                    <li><a href="#" class="sub-menu-item">Signal</a></li>
+                    <li><a href="{{route('signal')}}" class="sub-menu-item">Signal</a></li>
 
                     <li class="has-submenu parent-parent-menu-item">
                         <a href="javascript:void(0)">Find Us</a><span class="menu-arrow"></span>
@@ -225,9 +232,8 @@
                                 <h5 class="footer-head">Usefull Links</h5>
                                 <ul class="list-unstyled footer-list mt-4">
                                     <li>
-                                        <a href="#" class="text-foot"><i
-                                                class="uil uil-angle-right-b me-1"></i> Terms of
-                                            Services</a>
+                                        <a href="{{route('signal')}}" class="text-foot"><i
+                                                class="uil uil-angle-right-b me-1"></i> Signals</a>
                                     </li>
                                     <li>
                                         <a href="{{route('faq')}}" class="text-foot"><i

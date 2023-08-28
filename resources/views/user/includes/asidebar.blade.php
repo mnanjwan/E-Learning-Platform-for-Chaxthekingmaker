@@ -98,11 +98,10 @@
 
         
         <li class="nav-item" >
-            <a class="nav-link active"  style="background-color: rgb(45, 57, 78); color:white" data-toggle="tab" href="{{ route('home') }}" role="tab"
-                aria-controls="" aria-selected="false">
+            <a  href="{{ route('home') }}" target="_blank"  style="background-color: rgb(45, 57, 78); color:white">
                 Back to website
             </a>
         </li>
-        
+
     </ul>
 </div>

@@ -277,32 +277,29 @@
 
                             <ul class="list-unstyled pt-3 border-top">
                                 <li class="h6 text-muted mb-0">
-                                    <span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>3
-                                    live zoom session
-                                    per week
+                                    <span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>2
+                                    live zoom session per week
                                 </li>
                                 <li class="h6 text-muted mb-0">
                                     <span class="icon h5 me-2"><i
-                                            class="uil uil-check-circle align-middle"></i></span>Personal Contact to
-                                    Mentor
+                                            class="uil uil-check-circle align-middle"></i></span>Personal Contact to Mentor
                                 </li>
                                 <li class="h6 text-muted mb-0">
                                     <span class="icon h5 me-2"><i
                                             class="uil uil-check-circle align-middle"></i></span>Access to study portal
                                 </li>
                                 <li class="h6 text-muted mb-0">
-                                    <span class="icon h5 me-2"><i
-                                            class="uil uil-check-circle align-middle"></i></span>Risk
+                                    <span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Risk
                                     Management
                                 </li>
                                 <li class="h6 text-muted mb-0">
                                     <span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>How
-                                    to Pass All Prop
-                                    Firm
+                                    to Pass All Prop Firm
                                 </li>
                                 <li class="h6 text-muted mb-0">
                                     <span class="icon h5 me-2"><i
                                             class="uil uil-check-circle align-middle"></i></span>Psychology
+                                </li>
                                 </li>
                                 <li class="h6 text-muted mb-0">
                                     <span class="icon h5 me-2"></span>
@@ -339,31 +336,27 @@
                             <ul class="list-unstyled pt-3 border-top">
                                 <li class="h6 text-muted mb-0">
                                     <span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>3
-                                    live zoom session
-                                    per week
-                                </li>
-                                <li class="h6 text-muted mb-0">
-                                    <span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>
-                                    Access to study portal
+                                    live zoom session per week
                                 </li>
                                 <li class="h6 text-muted mb-0">
                                     <span class="icon h5 me-2"><i
-                                            class="uil uil-check-circle align-middle"></i></span>Personal Contact to
-                                    Mentor
+                                            class="uil uil-check-circle align-middle"></i></span>Access to study portal
+                                </li>
+                                <li class="h6 text-muted mb-0">
+                                    <span class="icon h5 me-2"><i
+                                            class="uil uil-check-circle align-middle"></i></span>Personal Contact to Mentor
                                 </li>
                                 <li class="h6 text-muted mb-0">
                                     <span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>My
-                                    Live Signals and
-                                    Trades ideas
+                                    Live Signals and Trades ideas
                                 </li>
                                 <li class="h6 text-muted mb-0">
-                                    <span class="icon h5 me-2"><i
-                                            class="uil uil-check-circle align-middle"></i></span>Risk Management
+                                    <span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Risk
+                                    Management
                                 </li>
                                 <li class="h6 text-muted mb-0">
                                     <span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>How
-                                    to Pass All Prop
-                                    Firm
+                                    to Pass All Prop Firm
                                 </li>
                                 <li class="h6 text-muted mb-0">
                                     <span class="icon h5 me-2"><i
@@ -442,6 +435,10 @@
                         <div class="section-title text-md-start text-center">
                             <ul class="feature list-inline">
                                 <li class="h6 mb-0" style="color: white">
+                                    <span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>1
+                                    months signals
+                                </li>
+                                <li class="h6 mb-0" style="color: white">
                                     <span class="icon h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>3
                                     months signals
                                 </li>
@@ -487,7 +484,7 @@
 
                     <div class="col-md-3 mt-4 mt-sm-0">
                         <div class="text-md-end text-center">
-                            <a href="" class="btn btn-light">Get Out Signals</a>
+                            <a href="{{route('signal')}}" class="btn btn-light">Get Out Signals</a>
                         </div>
                     </div>
                     <!--end col-->
