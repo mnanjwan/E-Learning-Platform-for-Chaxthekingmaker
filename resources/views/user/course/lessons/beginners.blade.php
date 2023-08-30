@@ -153,7 +153,7 @@
                                         View Lessons
                                     </a>
                                 </li>
-                                <li>
+                                <li class="mobile-menu-nav-item">
                                     <a href="{{ route('dashboard') }}"
                                 class="btn theme-btn theme-btn-sm theme-btn-transparent lh-26 text-dark mr-2"><i
                                     class="la la-share mr-1"></i>
