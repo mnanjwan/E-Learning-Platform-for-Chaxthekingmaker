@@ -309,7 +309,7 @@
                                             <i class="la la-angle-up"></i>
                                             <span class="fs-15"> {{ $course_name }} Course</span>
                                             <span class="course-duration">
-                                                <span>sum the total mins</span>
+                                                {{-- <span>sum the total mins</span> --}}
                                             </span>
                                         </button>
                                     </div><!-- end card-header -->

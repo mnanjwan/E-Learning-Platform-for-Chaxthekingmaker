@@ -72,7 +72,7 @@
                                     <label class="label-text">First Name</label>
                                     <div class="form-group">
                                         <input class="form-control form--control" type="text" name="text"
-                                            @disabled(true) value="">
+                                            @disabled(true) value="{{auth()->user()->firstname}}">
                                         <span class="la la-user input-icon"></span>
                                     </div>
                                 </div><!-- end input-box -->
@@ -80,7 +80,7 @@
                                     <label class="label-text">Last Name</label>
                                     <div class="form-group">
                                         <input class="form-control form--control" type="text" name="text"
-                                            @disabled(true) value="">
+                                            @disabled(true) value="{{auth()->user()->surname}}">
                                         <span class="la la-user input-icon"></span>
                                     </div>
                                 </div><!-- end input-box -->
@@ -89,7 +89,7 @@
                                     <label class="label-text">Email Address</label>
                                     <div class="form-group">
                                         <input class="form-control form--control" type="email" name="email"
-                                            @disabled(true) value="">
+                                            @disabled(true) value="{{auth()->user()->email}}">
                                         <span class="la la-envelope input-icon"></span>
                                     </div>
                                 </div><!-- end input-box -->
