@@ -15,7 +15,7 @@
         rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="icon" sizes="16x16" href="images/favicon.png">
+    <link rel="icon" sizes="16x16" href="{{ asset('user_asset/images/logo-icon.png') }}">
 
 
     <!-- inject:css -->
@@ -143,6 +143,25 @@
 
                     </div><!-- end lecture-viewer-container -->
                     <div class="lecture-video-detail">
+                        <div class="lecture-tab-body bg-gray p-4">
+                            <ul class="nav nav-tabs generic-tab" id="myTab" role="tablist">
+
+                                <li class="nav-item mobile-menu-nav-item">
+                                    <a class="nav-link btn theme-btn" id="course-content-tab" data-toggle="tab"
+                                        href="#course-content" role="tab" aria-controls="course-content"
+                                        aria-selected="false">
+                                        View Lessons
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ route('dashboard') }}"
+                                class="btn theme-btn theme-btn-sm theme-btn-transparent lh-26 text-dark mr-2"><i
+                                    class="la la-share mr-1"></i>
+                                Back to Dashbaord</a>
+                                </li>
+
+                            </ul>
+                        </div>
 
                         <div class="lecture-video-detail-body">
                             <div class="tab-content" id="myTabContent">
@@ -152,18 +171,26 @@
                                     <div class="mobile-course-menu pt-4">
                                         <div class="accordion generic-accordion generic--accordion"
                                             id="mobileCourseAccordionCourseExample">
+
+
+
+
                                             <div class="card">
                                                 <div class="card-header" id="mobileCourseHeadingOne">
+                                                    @php
+                                                    $course_name = App\Models\Course::where('id', $current_lesson->course_id)
+                                                        ->get()
+                                                        ->value('title');
+                                                @endphp
                                                     <button class="btn btn-link" type="button"
                                                         data-toggle="collapse" data-target="#mobileCourseCollapseOne"
                                                         aria-expanded="true" aria-controls="mobileCourseCollapseOne">
                                                         <i class="la la-angle-down"></i>
                                                         <i class="la la-angle-up"></i>
-                                                        <span class="fs-15"> Section 1: Dive in and Discover After
-                                                            Effects</span>
+                                                        <span class="fs-15"> {{ $course_name }} </span>
                                                         <span class="course-duration">
-                                                            <span>1/5</span>
-                                                            <span>21min</span>
+                                                            {{-- <span>1/5</span>
+                                                            <span>21min</span> --}}
                                                         </span>
                                                     </button>
                                                 </div><!-- end card-header -->
@@ -172,60 +199,40 @@
                                                     data-parent="#mobileCourseAccordionCourseExample">
                                                     <div class="card-body p-0">
                                                         <ul class="curriculum-sidebar-list">
-                                                            <li class="course-item-link active">
-                                                                <div class="course-item-content-wrap">
-                                                                    <div class="custom-control custom-checkbox">
-                                                                        <input type="checkbox"
-                                                                            class="custom-control-input"
-                                                                            id="mobileCourseCheckbox" required>
-                                                                        <label
-                                                                            class="custom-control-label custom--control-label"
-                                                                            for="mobileCourseCheckbox"></label>
-                                                                    </div><!-- end custom-control -->
-                                                                    <div class="course-item-content">
-                                                                        <h4 class="fs-15">1. Let's Have Fun -
-                                                                            Seriously!</h4>
-                                                                        <div class="courser-item-meta-wrap">
-                                                                            <p class="course-item-meta"><i
-                                                                                    class="la la-play-circle"></i>2min
-                                                                            </p>
-                                                                        </div>
-                                                                    </div><!-- end course-item-content -->
-                                                                </div><!-- end course-item-content-wrap -->
-                                                            </li>
-                                                            <li class="course-item-link">
-                                                                <div class="course-item-content-wrap">
-                                                                    <div class="custom-control custom-checkbox">
-                                                                        <input type="checkbox"
-                                                                            class="custom-control-input"
-                                                                            id="mobileCourseCheckbox2" required>
-                                                                        <label
-                                                                            class="custom-control-label custom--control-label"
-                                                                            for="mobileCourseCheckbox2"></label>
-                                                                    </div><!-- end custom-control -->
-                                                                    <div class="course-item-content">
-                                                                        <h4 class="fs-15">2. A simple concept to get
-                                                                            ahead</h4>
-                                                                        <div class="courser-item-meta-wrap">
-                                                                            <p class="course-item-meta"><i
-                                                                                    class="la la-play-circle"></i>2min
-                                                                            </p>
-                                                                        </div>
-                                                                    </div><!-- end course-item-content -->
-                                                                </div><!-- end course-item-content-wrap -->
-                                                            </li>
-                                                            <li class="course-item-link active-resource">
-                                                                <div class="course-item-content-wrap">
-                                                                    <div class="custom-control custom-checkbox">
-                                                                        <input type="checkbox"
-                                                                            class="custom-control-input"
-                                                                            id="mobileCourseCheckbox3" required>
-                                                                        <label
-                                                                            class="custom-control-label custom--control-label"
-                                                                            for="mobileCourseCheckbox3"></label>
-                                                                    </div><!-- end custom-control -->
-                                                                </div><!-- end course-item-content-wrap -->
-                                                            </li>
+                                                            @foreach ($lesson as $row)
+                                                                <li class="course-item-link ">
+                                                                    <div class="course-item-content-wrap">
+                                                                        <div class="custom-control custom-checkbox">
+                                                                        </div><!-- end custom-control -->
+                                                                        <div class="course-item-content">
+                                                                            <h4 class="fs-15">
+                                                                                @if ($row->course_id == 3)
+                                                                                    <a
+                                                                                        href="{{ route('advance.lesson', ['id' => $row->id]) }}">
+                                                                                        {{ $row->sequence }}.{{ $row->title }}
+                                                                                    </a>
+                                                                                @elseif($row->course_id == 2)
+                                                                                    <a
+                                                                                        href="{{ route('advance.lesson', ['id' => $row->id]) }}">
+                                                                                        {{ $row->sequence }}.{{ $row->title }}
+                                                                                    </a>
+                                                                                @else
+                                                                                    <a
+                                                                                        href="{{ route('beginners.lesson', ['id' => $row->id]) }}">
+                                                                                        {{ $row->sequence }}.{{ $row->title }}
+                                                                                    </a>
+                                                                                @endif
+                                                                            </h4>
+
+                                                                            <div class="courser-item-meta-wrap">
+                                                                                <p class="course-item-meta"><i
+                                                                                        class="la la-play-circle"></i>{{ $row->duration }}min
+                                                                                </p>
+                                                                            </div>
+                                                                        </div><!-- end course-item-content -->
+                                                                    </div><!-- end course-item-content-wrap -->
+                                                                </li>
+                                                            @endforeach
                                                         </ul>
                                                     </div><!-- end card-body -->
                                                 </div><!-- end collapse -->
@@ -235,6 +242,10 @@
                                         </div><!-- end accordion-->
                                     </div><!-- end mobile-course-menu -->
                                 </div><!-- end tab-pane -->
+
+
+
+
                                 <div class="tab-pane fade show active" id="overview" role="tabpanel"
                                     aria-labelledby="overview-tab">
                                     <div class="lecture-overview-wrap">
