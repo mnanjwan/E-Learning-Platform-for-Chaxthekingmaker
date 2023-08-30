@@ -10,6 +10,8 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use App\Helpers\EmailHelper;
+
 
 class CheckoutPageController extends Controller
 {
@@ -83,6 +85,16 @@ class CheckoutPageController extends Controller
         $transaction->save();
 
         // Send email to user
+        //  $body = "<h1>Hi ".$user->surname." ,</h1>
+        //                 <p>Your Request for investment was rejected, please contact admin. 😢<br><br>
+        //                 Amount: $".$transaction->amount."<br>
+        //                 <br><br>
+        //                 </p>";
+        
+        // $to = $user->email;
+        // $subject = 'Investment Notice';
+        // $replyToEmail = 'admin@chaxthekingmaker.com';
+        // EmailHelper::sendEmail($to, $body, $subject, $replyToEmail);
 
         return redirect()->route('payment', ['order_id' => $order->order_id])->with('success', 'Registration Successful, Please Login');
     }

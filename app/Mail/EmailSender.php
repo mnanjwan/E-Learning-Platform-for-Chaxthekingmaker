@@ -39,7 +39,7 @@ class EmailSender extends Mailable
     {
         return $this->subject($this->subject)
             ->replyTo($this->replyToEmail)
-            ->view('emails.master')
+            ->view('email.master')
             ->with($this->body);
     }
 }

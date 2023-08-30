@@ -19,9 +19,16 @@
                 <div class="dashboard-heading mb-5">
                     <h3 class="fs-22 font-weight-semi-bold">Settings</h3>
                 </div>
-                @if (session('success'))
+                @if (session()->has('errors'))
+                    <div class="alert alert-danger">
+
+                        {{ session()->get('errors')->first() }}
+                    </div>
+                @endif
+                @if (session()->has('success'))
                     <div class="alert alert-success">
-                        {{ session('success') }}
+
+                        {{ session()->get('success') }}
                     </div>
                 @endif
                 <ul class="nav nav-tabs generic-tab pb-30px" id="myTab" role="tablist">
@@ -148,6 +155,6 @@
         </div><!-- end dashboard-content-wrap -->
     </section><!-- end dashboard-area -->
     <!-- ================================
-                    END DASHBOARD AREA
-                ================================= -->
+                        END DASHBOARD AREA
+                    ================================= -->
 @endsection

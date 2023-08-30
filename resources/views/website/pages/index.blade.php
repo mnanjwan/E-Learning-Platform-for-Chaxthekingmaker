@@ -266,7 +266,7 @@
                     <div class="card pricing pricing-primary business-rate border-0 p-4 rounded-md shadow">
                         <div class="card-body p-0">
                             <span class="py-2 px-4 d-inline-block bg-soft-primary h6 mb-0 text-primary rounded-lg">Bootcamp</span>
-                            <h2 class="fw-bold mb-0 mt-3">Comming Soon</h2>
+                            <h2 class="fw-bold mb-0 mt-3">Coming Soon</h2>
                             <p class="text-muted"></p>
 
                             <p class="text-muted">
@@ -300,7 +300,7 @@
                             <div class="mt-4">
                                 <div class="d-grid">
                                     <a class="btn btn-primary"
-                                        href="#" @disabled(true)>Comming Soon</a>
+                                        href="#" @disabled(true)>Coming Soon</a>
                                 </div>
                                 <p class="text-muted mt-3 mb-0">*No credit card required</p>
                             </div>
