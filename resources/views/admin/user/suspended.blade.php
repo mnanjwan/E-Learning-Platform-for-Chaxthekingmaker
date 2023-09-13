@@ -29,7 +29,6 @@
                                 <th scope="col">Name</th>
                                 <th scope="col">Email</th>
                                 <th scope="col">Phone</th>
-                                <th scope="col">Plan</th>
                                 <th scope="col">Date Joined</th>
                                 <th scope="col">Status</th>
                                 <th scope="col">Action</th>
@@ -55,17 +54,10 @@
                                     </th>
 
 
-                                    @foreach ($user->orders as $order)
-                                        <td>
-                                            <ul class="generic-list-item">
-                                                <li>{{ $order->product_name }}</li>
-                                            </ul>
-                                        </td>
-                                    @endforeach
-
+                                   
                                     <td>
                                         <ul class="generic-list-item">
-                                            <li> {{ 'July 12, 2019' }} </li>
+                                            <li> {{ date('Y-m-d', strtotime($user->created_at)) }} </li>
                                         </ul>
                                     </td>
                                     <td>
@@ -87,12 +79,12 @@
                                                     <div class="dropdown-menu dropdown-menu-right"
                                                         aria-labelledby="dropdownMenuLink">
 
-                                                        @foreach ($user->orders as $order)
+                                                        {{-- @foreach ($user->orders as $order) --}}
                                                             <a class="dropdown-item"
-                                                                href="{{ route('approve.user.transaction', ['order_id' => $order->order_id]) }}">Approve</a>
-                                                        @endforeach
+                                                                href="{{ route('admin.activate.user', ['user_id' => $user->id]) }}">Activate</a>
+                                                        {{-- @endforeach --}}
 
-                                                        <a class="dropdown-item" href="#">Activate</a>
+                                                        {{-- <a class="dropdown-item" href="#">Activate</a> --}}
                                                     </div>
                                                 </div>
                                             </div>

@@ -79,7 +79,9 @@ Route::prefix('chaxadmin')->group(function () {
 
     #suspend
     Route::get('/suspend', 'Admin\User\SuspendUserController@index')->name('admin.suspend'); //Suspended user
-    Route::get('/suspend/{user_id}', 'Admin\User\ApproveUserController@approve')->name('admin.suspend.user'); //Suspended user
+    Route::get('/suspend/{user_id}', 'Admin\User\SuspendUserController@suspend')->name('admin.suspend.user'); //Suspended user
+    Route::get('/activate/{user_id}', 'Admin\User\ActivateUserController@activate')->name('admin.activate.user'); //Approve user
+
 
     #transaction
     Route::get('/transaction/{order_id}', 'Admin\User\ApproveUserController@approve')->name('approve.user.transaction'); //Approve user

@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Order;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class SuspendUserController extends Controller
 {
@@ -13,15 +14,20 @@ class SuspendUserController extends Controller
 
     public function index()
     {
-        $disabled_users = Order::where('status', 'completed')->get('user_id');
-        dd($disabled_users);
-        $user = User::with('orders')->where('status', 'disabled')->get();
+        $user = DB::table('users')
+
+        ->join('orders', 'users.id', '=', 'orders.user_id')
+        ->where('users.status', 'disabled')
+        ->select('users.*', 'orders.status')
+        ->where('orders.status', 'completed')->get();
+
+
+        // $user = User::with('orders')->where('status', 'disabled')->get();
 
         return view('admin.user.suspended', compact('user'));
-        // return view('admin.user.approve');
     }
 
-    public function approve($user_id)
+    public function suspend($user_id)
     {
         // dd($order_id);
 

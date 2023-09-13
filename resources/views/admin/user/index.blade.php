@@ -79,8 +79,8 @@
                                                     </a>
                                                     <div class="dropdown-menu dropdown-menu-right"
                                                         aria-labelledby="dropdownMenuLink">
-                                                        <a class="dropdown-item" href="#">View</a>
-                                                        <a class="dropdown-item" href="#">Suspend</a>
+                                                        {{-- <a class="dropdown-item" href="#">View</a> --}}
+                                                        <a class="dropdown-item" href="{{ route('admin.suspend.user', ['user_id' => $user->id])}}">Suspend</a>
                                                     </div>
                                                 </div>
                                             </div>

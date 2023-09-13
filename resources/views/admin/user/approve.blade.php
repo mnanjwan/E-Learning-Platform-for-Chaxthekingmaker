@@ -92,7 +92,7 @@
                                                                 href="{{ route('approve.user.transaction', ['order_id' => $order->order_id]) }}">Approve</a>
                                                         @endforeach
 
-                                                        <a class="dropdown-item" href="#">Activate</a>
+                                                        {{-- <a class="dropdown-item" href="#">Activate</a> --}}
                                                     </div>
                                                 </div>
                                             </div>
