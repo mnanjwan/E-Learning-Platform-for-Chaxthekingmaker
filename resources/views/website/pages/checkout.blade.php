@@ -261,10 +261,6 @@
                                 </div>
                             @endif
 
-
-
-
-
                         </div>
                     </div>
                     <!--end col-->

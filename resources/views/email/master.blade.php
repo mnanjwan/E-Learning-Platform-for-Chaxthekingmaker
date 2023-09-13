@@ -1,16 +1,21 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="x-apple-disable-message-reformatting" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="color-scheme" content="light dark" />
     <meta name="supported-color-schemes" content="light dark" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title></title>
     <style type="text/css" rel="stylesheet" media="all">
         /* Base ------------------------------ */
 
+
         @import url("https://fonts.googleapis.com/css?family=Nunito+Sans:400,700&display=swap");
+
         body {
             width: 100% !important;
             height: 100%;
@@ -41,6 +46,7 @@
             opacity: 0;
             overflow: hidden;
         }
+
         /* Type ------------------------------ */
 
         body,
@@ -90,6 +96,7 @@
         p.sub {
             font-size: 13px;
         }
+
         /* Utilities ------------------------------ */
 
         .align-right {
@@ -107,6 +114,7 @@
         .u-margin-bottom-none {
             margin-bottom: 0;
         }
+
         /* Buttons ------------------------------ */
 
         .button {
@@ -146,6 +154,7 @@
                 text-align: center !important;
             }
         }
+
         /* Attribute list ------------------------------ */
 
         .attributes {
@@ -160,6 +169,7 @@
         .attributes_item {
             padding: 0;
         }
+
         /* Related Items ------------------------------ */
 
         .related {
@@ -193,6 +203,7 @@
             text-align: center;
             padding: 25px 0 10px;
         }
+
         /* Discount Code ------------------------------ */
 
         .discount {
@@ -214,6 +225,7 @@
             text-align: center;
             font-size: 15px;
         }
+
         /* Social Icons ------------------------------ */
 
         .social {
@@ -230,6 +242,7 @@
             margin: 0 8px 10px 8px;
             padding: 0;
         }
+
         /* Data table ------------------------------ */
 
         .purchase {
@@ -311,6 +324,7 @@
             -premailer-cellpadding: 0;
             -premailer-cellspacing: 0;
         }
+
         /* Masthead ----------------------- */
 
         .email-masthead {
@@ -329,6 +343,7 @@
             text-decoration: none;
             text-shadow: 0 1px 0 white;
         }
+
         /* Body ------------------------------ */
 
         .email-body {
@@ -383,9 +398,11 @@
         .content-cell {
             padding: 45px;
         }
+
         /*Media Queries ------------------------------ */
 
         @media only screen and (max-width: 600px) {
+
             .email-body_inner,
             .email-footer {
                 width: 100% !important;
@@ -393,6 +410,7 @@
         }
 
         @media (prefers-color-scheme: dark) {
+
             body,
             .email-body,
             .email-body_inner,
@@ -403,6 +421,7 @@
                 background-color: #333333 !important;
                 color: #FFF !important;
             }
+
             p,
             ul,
             ol,
@@ -414,10 +433,12 @@
             .purchase_item {
                 color: #FFF !important;
             }
+
             .attributes_content,
             .discount {
                 background-color: #222 !important;
             }
+
             .email-masthead_name {
                 text-shadow: none !important;
             }
@@ -427,6 +448,50 @@
             color-scheme: light dark;
             supported-color-schemes: light dark;
         }
+
+        
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 25px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50px;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+
+        .fa-youtube {
+            background: #bb0000;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #125688;
+            color: white;
+        }
+
+        .fa-whatsapp {
+            background: #00b489;
+            color: white;
+        }
+
+        .fa-telegram {
+            background: #1574cc;
+            color: white;
+        }
+
+
+
     </style>
     <!--[if mso]>
     <style type="text/css">
@@ -436,70 +501,81 @@
     </style>
     <![endif]-->
 </head>
+
 <body>
-<span class="preheader"></span>
-<table class="email-wrapper" width="100%" cellpadding="0" cellspacing="0" role="presentation">
-    <tr>
-        <td align="center">
-            <table class="email-content" width="100%" cellpadding="0" cellspacing="0" role="presentation">
-                <tr>
-                    <td class="email-masthead">
+    <span class="preheader"></span>
+    <table class="email-wrapper" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+        <tr>
+            <td align="center">
+                <table class="email-content" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+                    <tr>
+                        <td class="email-masthead">
 
-                    </td>
-                </tr>
-                <!-- Email Body -->
-                <tr>
-                    <td class="email-body" width="570" cellpadding="0" cellspacing="0">
-                        <table class="email-body_inner" align="center" width="570" cellpadding="0" cellspacing="0" role="presentation">
-                            <!-- Body content -->
-                            <tr>
-                                <td class="content-cell">
-                                    <div class="f-fallback">
-                                        <center>
-                                            <img src="https://chaxthekingmaker.com/website_asset/images/logo-dark.png" alt="logo" class="desktop-logo" style="height: 4em !important"/>
-                                        </center>
-                                        <br><br>
-                                        {!! $body !!}
-                                        <!-- Action -->
-                                        <table class="body-action" align="center" width="100%" cellpadding="0" cellspacing="0" role="presentation">
-                                            <tr>
-                                                <td align="center">
-                                                    <!-- Border based button
+                        </td>
+                    </tr>
+                    <!-- Email Body -->
+                    <tr>
+                        <td class="email-body" width="570" cellpadding="0" cellspacing="0">
+                            <table class="email-body_inner" align="center" width="570" cellpadding="0"
+                                cellspacing="0" role="presentation">
+                                <!-- Body content -->
+                                <tr>
+                                    <td class="content-cell">
+                                        <div class="f-fallback">
+                                            <center>
+                                                <img src="https://chaxthekingmaker.com/website_asset/images/logo-dark.png"
+                                                    alt="logo" class="desktop-logo"
+                                                    style="height: 4em !important" />
+                                            </center>
+                                            <br><br>
+                                            {!! $body !!}
+                                            <!-- Action -->
+                                            <table class="body-action" align="center" width="100%" cellpadding="0"
+                                                cellspacing="0" role="presentation">
+                                                <tr>
+                                                    <td align="center">
+                                                        <!-- Border based button
                                  https://litmus.com/blog/a-guide-to-bulletproof-buttons-in-email-design -->
-                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
-                                                        <tr>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <p>Thanks,
-                                            <br>Chax the King Maker</p>
-                                        <!-- Sub copy -->
-                                        <p class=" sub align-center" style="margin-top: 7px ;color: white;background: #66bc24;padding: 5px">
-                                        Chax The King Maker
-                                      
-                                        </p>
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <table class="email-footer" align="center" width="570" cellpadding="0" cellspacing="0" role="presentation">
-                            <tr>
-                                <td class="content-cell" align="center">
+                                                        <table width="100%" border="0" cellspacing="0"
+                                                            cellpadding="0" role="presentation">
+                                                            <tr>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <p>Thanks,
+                                                <br>Chax the King Maker
+                                            </p>
+                                            <!-- Sub copy -->
+                                            <p class=" sub align-center"
+                                                style="margin-top: 7px ;color: white;background: #22234f;padding: 5px">
+                                                Chax The King Maker
+                                                <br>
+                                                <br>
+                                            </p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table class="email-footer" align="center" width="570" cellpadding="0" cellspacing="0"
+                                role="presentation">
+                                <tr>
+                                    <td class="content-cell" align="center">
 
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-</table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
 </body>
+
 </html>

@@ -8,6 +8,11 @@ use Illuminate\Http\Request;
 
 class IntermediateController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
     public function index($id) {
 
         $current_lesson = Lesson::where('course_id', $id)->first();

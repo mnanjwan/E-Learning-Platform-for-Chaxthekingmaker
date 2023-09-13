@@ -11,9 +11,11 @@ class EmailSender extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public  $body;
+    // protected $data;
+    public $body;
     public $subject;
     public $replyToEmail;
+
 
     /**
      * Create a new message instance.
@@ -23,7 +25,8 @@ class EmailSender extends Mailable
      * @param  string  $replyTo
      * @return void
      */
-    public function __construct($body, string $subject, string $replyToEmail)
+
+    public function __construct(string $body, string $subject, $replyToEmail)
     {
         $this->body = $body;
         $this->subject = $subject;
@@ -35,11 +38,17 @@ class EmailSender extends Mailable
      *
      * @return $this
      */
+
     public function build()
     {
-        return $this->subject($this->subject)
-            ->replyTo($this->replyToEmail)
+        
+        $subject =$this->subject;
+        $replyToEmail =$this->replyToEmail;
+        $body =$this->body;
+        return $this
+            ->subject($subject)
+            ->replyTo($replyToEmail)
             ->view('email.master')
-            ->with($this->body);
+            ->with($body);
     }
 }

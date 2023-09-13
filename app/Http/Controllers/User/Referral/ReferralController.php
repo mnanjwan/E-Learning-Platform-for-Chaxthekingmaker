@@ -9,6 +9,11 @@ use Illuminate\Http\Request;
 
 class ReferralController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
     public function index() {
 
         $referrals = Referral::where('user_id', auth()->user()->id)->with('user')->get();

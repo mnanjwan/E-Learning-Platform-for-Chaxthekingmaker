@@ -11,6 +11,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use App\Helpers\EmailHelper;
+use App\Jobs\SendEmail;
 
 
 class CheckoutPageController extends Controller
@@ -22,7 +23,7 @@ class CheckoutPageController extends Controller
         $validator = Validator::make(['value' => $price], [
             'value' => 'required|in:500,1000',
         ]);
-        
+
         if ($validator->fails()) {
             return redirect()->back();
         }
@@ -85,16 +86,27 @@ class CheckoutPageController extends Controller
         $transaction->save();
 
         // Send email to user
-        //  $body = "<h1>Hi ".$user->surname." ,</h1>
-        //                 <p>Your Request for investment was rejected, please contact admin. 😢<br><br>
-        //                 Amount: $".$transaction->amount."<br>
-        //                 <br><br>
-        //                 </p>";
-        
-        // $to = $user->email;
-        // $subject = 'Investment Notice';
-        // $replyToEmail = 'admin@chaxthekingmaker.com';
+        $replyToEmail = 'admin@chaxthekingmaker.com';
+        $userEmail = $user->email;
+        $subject = 'Order Confirmation';
+        $body = "<h1>Hi " . $user->surname . ",</h1>
+                        <p>
+                        Your Account has been Initaited successfully, please proceed by making payment 
+                        of amount below for your account to be active.<br><br>
+                        Amount: $" . $transaction->amount . "<br>
+                        
+                        </p>
+                        <p>
+                        After Payments please contact <a href='https://wa.link/p5vyor'>admin</a> or 
+                        email <a href='mailto:admin@chaxthekingmaker.com'>admin@chaxthekingmaker.com</a>, 
+                        with your proof of payment
+                        </p><br>";
+
+
         // EmailHelper::sendEmail($to, $body, $subject, $replyToEmail);
+        // dispatch(new SendEmail( $userEmail, $body, $subject, $replyToEmail ));
+        // dispatch(new SendEmail( $subject, $replyToEmail, $userEmail, $body));
+        // dispatch(new SendEmail($userEmail, $replyToEmail, $body, $subject));
 
         return redirect()->route('payment', ['order_id' => $order->order_id])->with('success', 'Registration Successful, Please Login');
     }
