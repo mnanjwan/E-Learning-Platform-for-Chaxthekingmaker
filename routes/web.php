@@ -100,6 +100,10 @@ Route::prefix('chaxadmin')->group(function () {
     #Lesson
     Route::get('/course', 'Admin\Course\CourseController@index')->name('admin.course');
 
+    #Broadcast
+    Route::get('/broadcast', 'Admin\Broadcast\AllUserController@index')->name('admin.broadcast.email');
+    Route::post('/broadcast', 'Admin\Broadcast\AllUserController@post')->name('admin.broadcast.email.post');
+
 
 
     Route::get('/logout', 'Admin\Auth\LogoutController@logout')->name('admin-logout');

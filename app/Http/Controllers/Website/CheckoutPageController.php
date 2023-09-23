@@ -103,10 +103,8 @@ class CheckoutPageController extends Controller
                         </p><br>";
 
 
-        // EmailHelper::sendEmail($to, $body, $subject, $replyToEmail);
-        // dispatch(new SendEmail( $userEmail, $body, $subject, $replyToEmail ));
-        // dispatch(new SendEmail( $subject, $replyToEmail, $userEmail, $body));
-        // dispatch(new SendEmail($userEmail, $replyToEmail, $body, $subject));
+        // EmailHelper::sendEmail($userEmail, $body, $subject, $replyToEmail);
+        dispatch(new SendEmail( $userEmail, $body, $subject, $replyToEmail ));
 
         return redirect()->route('payment', ['order_id' => $order->order_id])->with('success', 'Registration Successful, Please Login');
     }

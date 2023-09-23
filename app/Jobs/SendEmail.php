@@ -26,12 +26,12 @@ class SendEmail implements ShouldQueue
     /**
      * Create a new job instance.
      */
-    public function __construct(string $userEmail,string $subject, string $replyToEmail, string $body)
+    public function __construct(string $userEmail, string $body, string $subject, $replyToEmail)
     {
         $this->userEmail = $userEmail;
+        $this->body = $body;
         $this->subject = $subject;
         $this->replyToEmail = $replyToEmail;
-        $this->body = $body;
     }
 
     /**

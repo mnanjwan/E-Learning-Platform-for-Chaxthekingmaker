@@ -49,6 +49,6 @@ class EmailSender extends Mailable
             ->subject($subject)
             ->replyTo($replyToEmail)
             ->view('email.master')
-            ->with($body);
+            ->with($body,$subject);
     }
 }

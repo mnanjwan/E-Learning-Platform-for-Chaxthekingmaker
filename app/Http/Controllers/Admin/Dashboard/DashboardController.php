@@ -48,8 +48,6 @@ class DashboardController extends Controller
             ->where('type', 'payment')
             ->get();
 
-
-
         $withdrawal = Transaction::with('user')->where('status', 'pending')
             ->where('type', 'withdrawal')
             ->get();

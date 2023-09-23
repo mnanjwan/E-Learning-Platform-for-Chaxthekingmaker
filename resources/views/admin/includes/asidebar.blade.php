@@ -63,12 +63,20 @@
             <li>
                 <a href="{{ route('admin.suspend') }}"><svg class="mr-2" xmlns="http://www.w3.org/2000/svg"
                         height="18px" viewBox="0 0 24 24" width="18px">
-                        <path d="M0 0h24v24H0V0z" fill="none" />
+                        <path d="M0 0h24v24H0V0z" fill="none" /> 
                         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
                     </svg>
                     Suspended Student</a>
             </li>
+            <hr>
+            <li>
+                <a href="{{ route('admin.broadcast.email') }}"   style="background-color: rgb(45, 57, 78); color:white"><svg class="mr-2" xmlns="http://www.w3.org/2000/svg"  style="background-color: rgb(255, 255, 255); color:white"
+                        height="18px" viewBox="0 0 24 24" width="18px">
+                    </svg>
+                    Email Broadcast</a>
+            </li>
         </ul>
+        
 
 
         <hr>

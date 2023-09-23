@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin\User;
 
 use App\Http\Controllers\Controller;
+use App\Jobs\SendEmail;
 use App\Models\Order;
 use App\Models\Referral;
 use App\Models\Transaction;
@@ -15,7 +16,7 @@ class ApproveUserController extends Controller
     {
         $this->middleware('admin'); // Use the "admin" guard
     }
-    
+
     public function index()
     {
         $user = User::with('orders')->where('status', 'disabled')->get();
@@ -39,7 +40,7 @@ class ApproveUserController extends Controller
         $order = Order::with('user')->where('order_id', $order_id)->first();
         $user = $order->user->referred_id;
         $referral_bonus = Referral::where('user_id', $user)->first();
-        
+
         // dd($referral_bonus);
         if ($referral_bonus) {
             $amount = $referral_bonus->bonus_amount;
@@ -52,6 +53,18 @@ class ApproveUserController extends Controller
         $user->save();
 
         // Send email to user
+        $replyToEmail = 'admin@chaxthekingmaker.com';
+        $userEmail = $user->email;
+        $subject = 'Account Approved';
+        $body = "<h1>Hi " . $user->surname . ",</h1>
+                        <p>
+                        Your Account has been Approved, You can now login and gain access to the unlimited wealth of knowledge here for you.<br><br>
+                        </p>
+                        <br>";
+
+        // EmailHelper::sendEmail($userEmail, $body, $subject, $replyToEmail);
+        dispatch(new SendEmail($userEmail, $body, $subject, $replyToEmail));
+
         return redirect()->back()->with('success', 'User Approved Successfully');
     }
 }

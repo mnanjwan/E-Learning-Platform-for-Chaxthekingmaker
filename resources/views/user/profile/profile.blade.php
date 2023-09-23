@@ -37,7 +37,7 @@
                                         class="profile-desc">{{auth()->user()->email}}</span>
                                 </li>
                                 <li>
-                                    <span class="profile-name">Phone Number:</span><span class="profile-desc">{{auth()->user()->phone}}250</span>
+                                    <span class="profile-name">Phone Number:</span><span class="profile-desc">{{auth()->user()->phone}}</span>
                                 </li>
                                 
                             </ul>
