@@ -69,12 +69,12 @@
                     Suspended Student</a>
             </li>
             <hr>
-            <li>
+            {{-- <li>
                 <a href="{{ route('admin.broadcast.email') }}"   style="background-color: rgb(45, 57, 78); color:white"><svg class="mr-2" xmlns="http://www.w3.org/2000/svg"  style="background-color: rgb(255, 255, 255); color:white"
                         height="18px" viewBox="0 0 24 24" width="18px">
                     </svg>
                     Email Broadcast</a>
-            </li>
+            </li> --}}
         </ul>
         
 

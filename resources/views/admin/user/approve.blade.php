@@ -65,7 +65,7 @@
 
                                     <td>
                                         <ul class="generic-list-item">
-                                            <li> {{ 'July 12, 2019' }} </li>
+                                            <li> {{ date('Y-m-d', strtotime($user->created_at)) }} </li>
                                         </ul>
                                     </td>
                                     <td>
