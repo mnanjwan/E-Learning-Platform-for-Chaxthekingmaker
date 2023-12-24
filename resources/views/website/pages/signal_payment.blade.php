@@ -69,7 +69,7 @@
                                     <li class="h6 text-primary mb-0" style="font-size: 2em">
                                         <span class="icon h5 me-2" ></span>Duration: {{ $signal }}
                                     </li>
-                      
+
                                     <li class="h6 text-primary mb-0" style="font-size: 2em">
                                         <span class="icon h5 me-2" ></span>Total: ${{ number_format($amount) }}
                                     </li>
@@ -96,13 +96,13 @@
                                 <h1 class="mb-0 card-title title-dark text-dark">
                                     Our Bank Details
                                     <br>
-                                    AYOKANMI OMONIYI:
+                                    CHAX KINGDOM NIGERIA LIMITED:
                                 </h1>
                                 <p class="h3 mb-0">
-                                    <span class="icon h5 "></span>UBA Bank
+                                    <span class="icon h5 "></span>MONIE POINT
                                 </p>
                                 <p class="h3 mb-0">
-                                    <span class="icon h5 "></span>Acct. No: 2282772145
+                                    <span class="icon h5 "></span>Acct. No: 4467616913
                                 </p>
                                 <hr>
                                 <div class="subcribe-form">
