@@ -27,7 +27,7 @@ Route::post('/checkout/{price}/{mentorship}', 'Website\CheckoutPageController@ch
 Route::get('/checkout/payment/{order_id}', 'Website\PaymentPageController@index')->name('payment');
 Route::get('/signals', 'Website\SignalPageController@index')->name('signal');
 Route::get('/signals/payment/{signal}/{amount}', 'Website\SignalPageController@payment')->name('signal.payment');
-#Referrals 
+#Referrals
 Route::post('/checkout/{price}/ref/{id}/{mentorship}', 'Website\ReferralPageController@store')->name('referral.checkout.process');
 Route::get('/mentorship/ref/{id}', 'Website\ReferralPageController@index')->name('register');
 Route::get('/mentorship/checkout/{price}/ref/{id}', 'Website\ReferralPageController@register')->name('referral.checkout.page');
@@ -82,6 +82,8 @@ Route::prefix('chaxadmin')->group(function () {
     Route::get('/suspend/{user_id}', 'Admin\User\SuspendUserController@suspend')->name('admin.suspend.user'); //Suspended user
     Route::get('/activate/{user_id}', 'Admin\User\ActivateUserController@activate')->name('admin.activate.user'); //Approve user
 
+    #suspend all student
+    Route::get('/all-students/suspend', 'Admin\User\SuspendAllUserController@suspendAllUsers')->name('admin.suspend.all_student'); //Suspended all s
 
     #transaction
     Route::get('/transaction/{order_id}', 'Admin\User\ApproveUserController@approve')->name('approve.user.transaction'); //Approve user
@@ -103,6 +105,8 @@ Route::prefix('chaxadmin')->group(function () {
     #Broadcast
     Route::get('/broadcast', 'Admin\Broadcast\AllUserController@index')->name('admin.broadcast.email');
     Route::post('/broadcast', 'Admin\Broadcast\AllUserController@post')->name('admin.broadcast.email.post');
+
+
 
 
 

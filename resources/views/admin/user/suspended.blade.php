@@ -6,8 +6,8 @@
 
 @section('content')
     <!-- ================================
-                                    START DASHBOARD AREA
-                                ================================= -->
+                                        START DASHBOARD AREA
+                                    ================================= -->
     <section class="dashboard-area">
         @include('admin.includes.asidebar')
         <div class="dashboard-content-wrap">
@@ -19,7 +19,14 @@
                 <div class="section-block mb-5"></div>
                 <div class="dashboard-heading mb-5">
                     <h3 class="fs-22 font-weight-semi-bold">All students</h3>
+                    <a class="btn btn-primary" href="{{ route('admin.suspend.all_student') }}">Suspend All Student</a>
                 </div>
+
+                @if (Session::has('success'))
+                    <div class="alert alert-success">
+                        {{ Session::get('success') }}
+                    </div>
+                @endif
 
                 <div class="table-responsive mb-5">
                     <h3 class="fs-18 font-weight-semi-bold pb-4">Suspended Details</h3>
@@ -54,7 +61,7 @@
                                     </th>
 
 
-                                   
+
                                     <td>
                                         <ul class="generic-list-item">
                                             <li> {{ date('Y-m-d', strtotime($user->created_at)) }} </li>
@@ -80,8 +87,8 @@
                                                         aria-labelledby="dropdownMenuLink">
 
                                                         {{-- @foreach ($user->orders as $order) --}}
-                                                            <a class="dropdown-item"
-                                                                href="{{ route('admin.activate.user', ['user_id' => $user->id]) }}">Activate</a>
+                                                        <a class="dropdown-item"
+                                                            href="{{ route('admin.activate.user', ['user_id' => $user->id]) }}">Activate</a>
                                                         {{-- @endforeach --}}
 
                                                         {{-- <a class="dropdown-item" href="#">Activate</a> --}}
@@ -103,12 +110,12 @@
         </div><!-- end dashboard-content-wrap -->
     </section><!-- end dashboard-area -->
     <!-- ================================
-                                    END DASHBOARD AREA
-                                ================================= -->
+                                        END DASHBOARD AREA
+                                    ================================= -->
 
     @push('table-scripts')
         {{-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> --}}
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js" ></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
         <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
         <script>
             // jQuery.noConflict();
@@ -118,5 +125,4 @@
             });
         </script>
     @endpush
-
 @endsection
