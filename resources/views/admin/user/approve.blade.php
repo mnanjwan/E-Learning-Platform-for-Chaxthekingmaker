@@ -18,7 +18,7 @@
                 @include('admin.includes.header')
                 <div class="section-block mb-5"></div>
                 <div class="dashboard-heading mb-5">
-                    <h3 class="fs-22 font-weight-semi-bold">All students</h3>
+                    <h3 class="fs-22 font-weight-semi-bold">All Pending students</h3>
                 </div>
 
                 <div class="table-responsive mb-5">
@@ -29,9 +29,9 @@
                                 <th scope="col">Name</th>
                                 <th scope="col">Email</th>
                                 <th scope="col">Phone</th>
-                                <th scope="col">Plan</th>
+                                {{-- <th scope="col">Plan</th> --}}
                                 <th scope="col">Date Joined</th>
-                                <th scope="col">Status</th>
+                                {{-- <th scope="col">Status</th> --}}
                                 <th scope="col">Action</th>
                             </tr>
                         </thead>
@@ -55,26 +55,26 @@
                                     </th>
 
 
-                                    @foreach ($user->orders as $order)
+                                    {{-- @foreach ($user->orders as $order)
                                         <td>
                                             <ul class="generic-list-item">
                                                 <li>{{ $order->product_name }}</li>
                                             </ul>
                                         </td>
-                                    @endforeach
+                                    @endforeach --}}
 
                                     <td>
                                         <ul class="generic-list-item">
                                             <li> {{ date('Y-m-d', strtotime($user->created_at)) }} </li>
                                         </ul>
                                     </td>
-                                    <td>
+                                    {{-- <td>
                                         <ul class="generic-list-item">
                                             <li><span
                                                     class="badge {{ $user->status === 'active' ? 'bg-success' : 'bg-danger' }}  text-white p-1">{{ $user->status === 'active' ? 'Active' : 'Disabled' }}</span>
                                             </li>
                                         </ul>
-                                    </td>
+                                    </td> --}}
                                     <td>
                                         <div class="nav-right-button d-flex align-items-center">
                                             <div class="generic-action-wrap generic--action-wrap">

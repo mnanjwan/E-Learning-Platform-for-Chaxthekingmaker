@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="{{ asset('user_asset/css/fancybox.css') }}" />
     <link rel="stylesheet" href="{{ asset('user_asset/css/style.css') }}" />
     <!-- end inject -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+
 </head>
 
 <body>
@@ -268,7 +270,7 @@
                         </div>
                         <!-- end card -->
                     </div>
-                 
+
                     <div class="col-lg-3 responsive-column-half">
                         <div class="card card-item dashboard-info-card">
                             <div class="card-body d-flex align-items-center">
@@ -574,7 +576,7 @@
                 <div class="row">
                     <div class="table-responsive mb-5">
                         <h3 class="fs-18 font-weight-semi-bold pb-4">Pending Approvals</h3>
-                        <table class="table generic-table">
+                        <table id="dataTable" class="table generic-table">
                             <thead>
                                 <tr>
                                     <th scope="col">Order ID</th>
@@ -616,7 +618,7 @@
                                             <li>{{$row->type}}</li>
                                         </ul>
                                     </td>
-                                   
+
                                     <td>
                                         <div class="nav-right-button d-flex align-items-center">
                                             <div class="generic-action-wrap generic--action-wrap">
@@ -638,9 +640,9 @@
                                 </tr>
                                 @empty
                                 <p style="color:red">No pending Student</p>
-                                    
+
                                 @endforelse
-                                
+
 
                             </tbody>
                         </table>
@@ -671,7 +673,7 @@
                                         </ul>
                                     </th>
                                     {{-- @foreach ($row->order as $order) --}}
-                                   
+
                                     {{-- @endforeach --}}
                                     <td>
                                         <ul class="generic-list-item">
@@ -694,7 +696,7 @@
                                             <li>{{$row->status}}</li>
                                         </ul>
                                     </td>
-                                   
+
                                     <td>
                                         <div class="nav-right-button d-flex align-items-center">
                                             <div class="generic-action-wrap generic--action-wrap">
@@ -715,9 +717,9 @@
                                     </td>
                                 </tr>
                                 @empty
-                                    
+
                                 @endforelse
-                                
+
 
                             </tbody>
                         </table>
@@ -770,7 +772,15 @@
     <!-- end modal -->
 
     <!-- template js files -->
-
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script>
+        // jQuery.noConflict();
+        jQuery(document).ready(function($) {
+            // Your DataTables initialization code here
+            $('#dataTable').DataTable();
+        });
+    </script>
     <!-- template js files -->
     <script src="{{ asset('user_asset/js/jquery-3.4.1.min.js') }}"></script>
     <script src="{{ asset('user_asset/js/bootstrap.bundle.min.js') }}"></script>

@@ -29,7 +29,7 @@
                 @endif
 
                 <div class="table-responsive mb-5">
-                    <h3 class="fs-18 font-weight-semi-bold pb-4">Suspended Details</h3>
+                    <h3 class="fs-18 font-weight-semi-bold pb-4">Student Details</h3>
                     <table id="dataTable" class="table generic-table">
                         <thead>
                             <tr>
