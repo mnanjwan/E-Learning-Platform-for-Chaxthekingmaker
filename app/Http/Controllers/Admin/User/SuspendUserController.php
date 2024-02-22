@@ -12,6 +12,10 @@ use Illuminate\Support\Facades\DB;
 class SuspendUserController extends Controller
 {
 
+    public function __construct()
+    {
+        $this->middleware('admin'); // Use the "admin" guard
+    }
 
     public function index()
     {

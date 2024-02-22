@@ -31,6 +31,10 @@
 </head>
 
 <body>
+    @include('sweetalert::alert')
+    {{-- @include('sweetalert::alert', ['cdn' => "https://cdn.jsdelivr.net/npm/sweetalert2@9"]) --}}
+
+
     <!-- start cssload-loader -->
     <div class="preloader">
         <div class="loader">
@@ -97,6 +101,43 @@
     <script src="{{ asset('user_asset/js/animated-skills.js') }}"></script>
     <script src="{{ asset('user_asset/js/jquery.MultiFile.min.js') }}"></script>
     <script src="{{ asset('user_asset/js/main.js') }}"></script>
+
+    <script>
+        // For validation errors
+        @if ($errors->any())
+
+            Swal.fire({
+                title: "Notification!!",
+                text: "@foreach ($errors->all() as $error){{ $error }} @endforeach",
+                icon: "error",
+                button: "close",
+            });
+        @endif
+    </script>
+
+    <script>
+        // For general erros and success
+        @if (session()->has('error'))
+            Swal.fire({
+                title: "Notification!!",
+                text: "{{ session()->get('error') }}",
+                icon: "error",
+                button: "close",
+            });
+        @endif
+
+        @if (session()->has('success'))
+
+
+            Swal.fire({
+                title: "Notification!",
+                text: "{{ session()->get('success') }}",
+                icon: "success",
+                button: "close",
+            });
+        @endif
+    </script>
+    
 </body>
 
 

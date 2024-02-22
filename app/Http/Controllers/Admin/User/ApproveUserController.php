@@ -9,6 +9,7 @@ use App\Models\Referral;
 use App\Models\Transaction;
 use App\Models\User;
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class ApproveUserController extends Controller
 {
@@ -27,7 +28,6 @@ class ApproveUserController extends Controller
 
     public function approve($order_id)
     {
-        // dd($order_id);
 
         $order = Order::where('order_id', $order_id)->first();
         $order->status = 'completed';
@@ -37,17 +37,17 @@ class ApproveUserController extends Controller
         $transaction->status = 'completed';
         $transaction->save();
 
-        $order = Order::with('user')->where('order_id', $order_id)->first();
-        $user = $order->user->referred_id;
-        $referral_bonus = Referral::where('user_id', $user)->first();
+        // $order = Order::with('user')->where('order_id', $order_id)->first();
+        // $user = $order->referred_id;
+        // $referral_bonus = Referral::where('user_id', $user)->first();
 
-        // dd($referral_bonus);
-        if ($referral_bonus) {
-            $amount = $referral_bonus->bonus_amount;
-            $user = User::where('id', $user)->first();
-            $user->wallet += $amount;
-            $user->save();
-        }
+        // // dd($referral_bonus);
+        // if ($referral_bonus) {
+        //     $amount = $referral_bonus->bonus_amount;
+        //     $user = User::where('id', $user)->first();
+        //     $user->wallet += $amount;
+        //     $user->save();
+        // }
         $user = User::where('id', $order->user->id)->first();
         $user->status = 'active';
         $user->save();
@@ -64,7 +64,7 @@ class ApproveUserController extends Controller
 
         // EmailHelper::sendEmail($userEmail, $body, $subject, $replyToEmail);
         try {
-            dispatch(new SendEmail($userEmail, $body, $subject, $replyToEmail));
+            // dispatch(new SendEmail($userEmail, $body, $subject, $replyToEmail));
         } catch (\Exception $ex) {}
 
         return redirect()->back()->with('success', 'User Approved Successfully');
