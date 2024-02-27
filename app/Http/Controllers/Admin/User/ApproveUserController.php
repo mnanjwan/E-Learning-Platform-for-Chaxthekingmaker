@@ -66,7 +66,7 @@ class ApproveUserController extends Controller
 
         // EmailHelper::sendEmail($userEmail, $body, $subject, $replyToEmail);
         try {
-            // dispatch(new SendEmail($userEmail, $body, $subject, $replyToEmail));
+            dispatch(new SendEmail($userEmail, $body, $subject, $replyToEmail));
         } catch (\Exception $ex) {}
 
         return redirect()->back()->with('success', 'User Approved Successfully');
