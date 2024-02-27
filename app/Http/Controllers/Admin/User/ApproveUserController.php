@@ -20,7 +20,7 @@ class ApproveUserController extends Controller
 
     public function index()
     {
-        $user = User::with('orders')->where('status', 'disabled')->get();
+        $user = User::with('orders')->where('status', 'disabled')->orderBy('id', 'DESC')->get();
 
         return view('admin.user.approve', compact('user'));
         // return view('admin.user.approve');
@@ -48,7 +48,9 @@ class ApproveUserController extends Controller
         //     $user->wallet += $amount;
         //     $user->save();
         // }
-        $user = User::where('id', $order->user->id)->first();
+
+
+        $user = User::where('id', $order->user_id)->first();
         $user->status = 'active';
         $user->save();
 
