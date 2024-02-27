@@ -55,6 +55,6 @@ class SuspendUserController extends Controller
         } catch (\Exception $ex) {}
 
 
-        return redirect()->back()->with('success', 'User Approved Successfully');
+        return redirect()->back()->with('success', 'User Suspended Successfully');
     }
 }
