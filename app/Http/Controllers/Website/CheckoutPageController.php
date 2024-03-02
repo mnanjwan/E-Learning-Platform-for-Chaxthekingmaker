@@ -91,20 +91,23 @@ class CheckoutPageController extends Controller
         $subject = 'Order Confirmation';
         $body = "<h1>Hi " . $user->surname . ",</h1>
                         <p>
-                        Your Account has been Initaited successfully, please proceed by making payment 
+                        Your Account has been Initaited successfully, please proceed by making payment
                         of amount below for your account to be active.<br><br>
                         Amount: $" . $transaction->amount . "<br>
-                        
+
                         </p>
                         <p>
-                        After Payments please contact <a href='https://wa.link/p5vyor'>admin</a> or 
-                        email <a href='mailto:admin@chaxthekingmaker.com'>admin@chaxthekingmaker.com</a>, 
+                        After Payments please contact <a href='https://wa.link/p5vyor'>admin</a> or
+                        email <a href='mailto:admin@chaxthekingmaker.com'>admin@chaxthekingmaker.com</a>,
                         with your proof of payment
                         </p><br>";
 
 
         // EmailHelper::sendEmail($userEmail, $body, $subject, $replyToEmail);
-        dispatch(new SendEmail( $userEmail, $body, $subject, $replyToEmail ));
+        try {
+            dispatch(new SendEmail( $userEmail, $body, $subject, $replyToEmail ));
+        } catch (\Exception $ex) {}
+
 
         return redirect()->route('payment', ['order_id' => $order->order_id])->with('success', 'Registration Successful, Please Login');
     }
