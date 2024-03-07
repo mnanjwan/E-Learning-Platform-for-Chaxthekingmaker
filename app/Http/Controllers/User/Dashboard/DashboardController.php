@@ -12,10 +12,12 @@ class DashboardController extends Controller
     {
         $this->middleware('auth');
     }
-    
+
     public function index() {
 
-        $data = Order::with('user')->where('id', auth()->user()->id)->first();
+        // $data = Order::with('user')->where('id', auth()->user()->id)->first();
+        $data = Order::where('id', auth()->user()->id)->first();
+        // dd($data->user->firstname);
         return view('user.dashboard.dashboard', compact('data'));
     }
 }

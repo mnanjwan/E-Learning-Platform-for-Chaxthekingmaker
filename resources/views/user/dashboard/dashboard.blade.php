@@ -42,7 +42,7 @@
                                 </div>
                                 <div class="pl-4">
                                     <p class="card-text fs-18">Metorship Type</p>
-                                    <h5 class="card-title pt-2 fs-26">{{$data->product_name}}</h5>
+                                    <h5 class="card-title pt-2 fs-26">{{$data->product_name ?? ''}}</h5>
                                 </div>
                             </div>
                             <!-- end card-body -->
