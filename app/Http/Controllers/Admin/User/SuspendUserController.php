@@ -24,7 +24,7 @@ class SuspendUserController extends Controller
         ->join('orders', 'users.id', '=', 'orders.user_id')
         ->where('users.status', 'disabled')
         ->select('users.*', 'orders.status')
-        ->where('orders.status', 'completed')->get();
+        ->where('orders.status', 'completed')->orderBy('id', 'DESC')->get();
 
 
         // $user = User::with('orders')->where('status', 'disabled')->get();

@@ -11,11 +11,11 @@ class UserController extends Controller
     {
         $this->middleware('admin'); // Use the "admin" guard
     }
-    
+
     public function index() {
 
-        $user = User::with('orders')->where('status', 'active')->get();
-    
+        $user = User::with('orders')->where('status', 'active')->orderBy('id', 'DESC')->get();
+
         return view('admin.user.index', compact('user'));
     }
 }

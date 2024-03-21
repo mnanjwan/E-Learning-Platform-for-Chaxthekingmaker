@@ -59,7 +59,7 @@
                                         </ul>
                                     </td>
                                     @endforeach
-                                   
+
                                     <td>
                                         <ul class="generic-list-item">
                                             <li> {{ date('Y-m-d', strtotime($user->created_at)) }} </li>
@@ -107,16 +107,26 @@
     ================================= -->
 
     @push('table-scripts')
-        {{-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> --}}
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js" ></script>
-        <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
-        <script>
-            // jQuery.noConflict();
-            jQuery(document).ready(function($) {
-                // Your DataTables initialization code here
-                $('#dataTable').DataTable();
+    {{-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> --}}
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.1/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.0.1/js/buttons.html5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.6.0/jszip.min.js"></script>
+
+    <script>
+        $(document).ready(function($) {
+            $('#dataTable').DataTable({
+                dom: 'Bfrtip',
+                buttons: [
+                    'excelHtml5',
+                    'pdfHtml5',
+                    'csvHtml5'
+                ]
             });
-        </script>
-    @endpush
+        });
+    </script>
+
+@endpush
 
 @endsection

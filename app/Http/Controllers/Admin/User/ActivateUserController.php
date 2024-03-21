@@ -13,7 +13,6 @@ class ActivateUserController extends Controller
     {
         $this->middleware('admin'); // Use the "admin" guard
     }
-    
 
     public function activate($user_id) {
         $user = User::where('id', $user_id)->first();
@@ -34,7 +33,6 @@ class ActivateUserController extends Controller
         try {
             dispatch(new SendEmail($userEmail, $body, $subject, $replyToEmail));
         } catch (\Exception $ex) {}
-
 
         return redirect()->back()->with('success', 'User Activated Successfully');
     }
