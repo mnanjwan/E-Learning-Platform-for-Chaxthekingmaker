@@ -112,3 +112,4 @@ Route::prefix('chaxadmin')->group(function () {
 
     Route::get('/logout', 'Admin\Auth\LogoutController@logout')->name('admin-logout');
 });
+    

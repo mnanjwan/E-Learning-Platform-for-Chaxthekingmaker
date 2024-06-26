@@ -116,7 +116,7 @@
                                         payments
                                     </p>
                                     <form>
-                                        <input id="copyText" value="TGXVdVhNwGEC2VSPrF2XqJzHQ2H8MwHFHV" readonly
+                                        <input id="copyText" value="TN73bWkmXHWzc54YKgyNaeEpY9tfLTPvDp" readonly
                                             class="form-control rounded-pill shadow">
                                         <button onclick="copyToClipboard()" class="btn btn-pills btn-primary">Copy
                                             Text</button>
